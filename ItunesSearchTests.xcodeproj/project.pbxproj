@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260EA09BCA96827E559A50AD /* Pods_ItunesSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DF913B58C171B67FED821 /* Pods_ItunesSearchTests.framework */; };
 		7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD585820761C0E00AD3566 /* AppDelegate.swift */; };
-		7CCD585B20761C0E00AD3566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD585A20761C0E00AD3566 /* ViewController.swift */; };
 		7CCD585E20761C0E00AD3566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585C20761C0E00AD3566 /* Main.storyboard */; };
 		7CCD586020761C1000AD3566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585F20761C1000AD3566 /* Assets.xcassets */; };
 		7CCD586320761C1000AD3566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD586120761C1000AD3566 /* LaunchScreen.storyboard */; };
+		FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E4F207977E00081F33F /* Storyboards.swift */; };
+		FF6C2E52207979750081F33F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E51207979750081F33F /* ReusableView.swift */; };
+		FF6C2E5720797BB50081F33F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5620797BB50081F33F /* Result.swift */; };
+		FF6C2E5920797BBF0081F33F /* ArrayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5820797BBF0081F33F /* ArrayResult.swift */; };
+		FF6C2E5B2079830A0081F33F /* CommonAlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5A2079830A0081F33F /* CommonAlertsFactory.swift */; };
+		FF6C2E5D207983EA0081F33F /* CommonAlertsFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5C207983EA0081F33F /* CommonAlertsFactoryImpl.swift */; };
+		FF6C2E5F2079854E0081F33F /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5E2079854E0081F33F /* ModuleInput.swift */; };
+		FF6C2E612079856D0081F33F /* ModuleInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E602079856D0081F33F /* ModuleInputHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FD9751C885D68E6BB0F2761 /* Pods-ItunesSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72029CFFA1847498806AC4C7 /* Pods-ItunesSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		7CCD585520761C0E00AD3566 /* ItunesSearchTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSearchTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCD585820761C0E00AD3566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CCD585A20761C0E00AD3566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CCD585D20761C0E00AD3566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CCD585F20761C1000AD3566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CCD586220761C1000AD3566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CCD586420761C1000AD3566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97DF913B58C171B67FED821 /* Pods_ItunesSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6C2E4F207977E00081F33F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		FF6C2E51207979750081F33F /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		FF6C2E5620797BB50081F33F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		FF6C2E5820797BBF0081F33F /* ArrayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayResult.swift; sourceTree = "<group>"; };
+		FF6C2E5A2079830A0081F33F /* CommonAlertsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactory.swift; sourceTree = "<group>"; };
+		FF6C2E5C207983EA0081F33F /* CommonAlertsFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactoryImpl.swift; sourceTree = "<group>"; };
+		FF6C2E5E2079854E0081F33F /* ModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
+		FF6C2E602079856D0081F33F /* ModuleInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInputHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260EA09BCA96827E559A50AD /* Pods_ItunesSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160416A3E3B3D0ECC5B9AED3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9751C885D68E6BB0F2761 /* Pods-ItunesSearchTests.debug.xcconfig */,
+				72029CFFA1847498806AC4C7 /* Pods-ItunesSearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7CCD584C20761C0E00AD3566 = {
 			isa = PBXGroup;
 			children = (
 				7CCD585720761C0E00AD3566 /* ItunesSearchTests */,
 				7CCD585620761C0E00AD3566 /* Products */,
+				160416A3E3B3D0ECC5B9AED3 /* Pods */,
+				B60618C6261D1F69A1FC98B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,101 @@
 		7CCD585720761C0E00AD3566 /* ItunesSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				FF6C2E49207960F40081F33F /* Classes */,
+				FF6C2E48207960E10081F33F /* Resources */,
+			);
+			path = ItunesSearchTests;
+			sourceTree = "<group>";
+		};
+		B60618C6261D1F69A1FC98B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B97DF913B58C171B67FED821 /* Pods_ItunesSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF6C2E48207960E10081F33F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7CCD585820761C0E00AD3566 /* AppDelegate.swift */,
-				7CCD585A20761C0E00AD3566 /* ViewController.swift */,
 				7CCD585C20761C0E00AD3566 /* Main.storyboard */,
 				7CCD585F20761C1000AD3566 /* Assets.xcassets */,
 				7CCD586120761C1000AD3566 /* LaunchScreen.storyboard */,
 				7CCD586420761C1000AD3566 /* Info.plist */,
 			);
-			path = ItunesSearchTests;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF6C2E49207960F40081F33F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E4C207977200081F33F /* Modules */,
+				FF6C2E4B2079771A0081F33F /* Managers */,
+				FF6C2E4A207961310081F33F /* Helpers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FF6C2E4A207961310081F33F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E5520797B910081F33F /* AlertsFactory */,
+				FF6C2E5420797B860081F33F /* EnumResult */,
+				FF6C2E5320797B6E0081F33F /* ModuleInput */,
+				FF6C2E4E207977CB0081F33F /* Storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FF6C2E4B2079771A0081F33F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FF6C2E4C207977200081F33F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FF6C2E4E207977CB0081F33F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E4F207977E00081F33F /* Storyboards.swift */,
+				FF6C2E51207979750081F33F /* ReusableView.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FF6C2E5320797B6E0081F33F /* ModuleInput */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E5E2079854E0081F33F /* ModuleInput.swift */,
+				FF6C2E602079856D0081F33F /* ModuleInputHandler.swift */,
+			);
+			path = ModuleInput;
+			sourceTree = "<group>";
+		};
+		FF6C2E5420797B860081F33F /* EnumResult */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E5620797BB50081F33F /* Result.swift */,
+				FF6C2E5820797BBF0081F33F /* ArrayResult.swift */,
+			);
+			path = EnumResult;
+			sourceTree = "<group>";
+		};
+		FF6C2E5520797B910081F33F /* AlertsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E5A2079830A0081F33F /* CommonAlertsFactory.swift */,
+				FF6C2E5C207983EA0081F33F /* CommonAlertsFactoryImpl.swift */,
+			);
+			path = AlertsFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CCD586720761C1000AD3566 /* Build configuration list for PBXNativeTarget "ItunesSearchTests" */;
 			buildPhases = (
+				E89EA507B638F8B4C074851F /* [CP] Check Pods Manifest.lock */,
 				7CCD585120761C0E00AD3566 /* Sources */,
 				7CCD585220761C0E00AD3566 /* Frameworks */,
 				7CCD585320761C0E00AD3566 /* Resources */,
+				0F8C165FC74EF3246591F84F /* [CP] Embed Pods Frameworks */,
+				F4374429DC8C8EA839C3F560 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +250,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F8C165FC74EF3246591F84F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89EA507B638F8B4C074851F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItunesSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4374429DC8C8EA839C3F560 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7CCD585120761C0E00AD3566 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCD585B20761C0E00AD3566 /* ViewController.swift in Sources */,
+				FF6C2E52207979750081F33F /* ReusableView.swift in Sources */,
+				FF6C2E5920797BBF0081F33F /* ArrayResult.swift in Sources */,
+				FF6C2E5F2079854E0081F33F /* ModuleInput.swift in Sources */,
+				FF6C2E5B2079830A0081F33F /* CommonAlertsFactory.swift in Sources */,
+				FF6C2E5D207983EA0081F33F /* CommonAlertsFactoryImpl.swift in Sources */,
+				FF6C2E612079856D0081F33F /* ModuleInputHandler.swift in Sources */,
+				FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */,
+				FF6C2E5720797BB50081F33F /* Result.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +456,12 @@
 		};
 		7CCD586820761C1000AD3566 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD9751C885D68E6BB0F2761 /* Pods-ItunesSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33NC89QWWR;
-				INFOPLIST_FILE = ItunesSearchTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +475,12 @@
 		};
 		7CCD586920761C1000AD3566 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72029CFFA1847498806AC4C7 /* Pods-ItunesSearchTests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33NC89QWWR;
-				INFOPLIST_FILE = ItunesSearchTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

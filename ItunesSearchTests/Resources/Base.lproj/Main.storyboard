@@ -212,19 +212,51 @@
             </objects>
             <point key="canvasLocation" x="3273.75" y="-540.84507042253517"/>
         </scene>
-        <!--Медиа тип-->
+        <!--View-->
         <scene sceneID="4wu-Bv-0Yy">
             <objects>
-                <viewController title="Медиа тип" id="Kwh-1Q-cHq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediaTypeView" title="Медиа тип" id="Kwh-1Q-cHq" customClass="MediaTypeView" customModule="ItunesSearchTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7L4-cr-knE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bee-vy-t8E">
+                                <rect key="frame" x="0.0" y="217" width="320" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ncu-Ne-7kA"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kwh-1Q-cHq" id="hOy-ta-pET"/>
+                                    <outlet property="delegate" destination="Kwh-1Q-cHq" id="bST-4b-pdK"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите медиа тип" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNH-4F-5X1">
+                                <rect key="frame" x="76.5" y="169" width="167" height="20.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bee-vy-t8E" firstAttribute="trailing" secondItem="tA3-eU-eGk" secondAttribute="trailing" id="Lg9-hR-hii"/>
+                            <constraint firstItem="gNH-4F-5X1" firstAttribute="centerX" secondItem="tA3-eU-eGk" secondAttribute="centerX" id="PcE-Th-JdH"/>
+                            <constraint firstItem="Bee-vy-t8E" firstAttribute="top" secondItem="gNH-4F-5X1" secondAttribute="bottom" constant="27.5" id="XRn-yx-AFX"/>
+                            <constraint firstItem="gNH-4F-5X1" firstAttribute="top" secondItem="tA3-eU-eGk" secondAttribute="top" constant="53" id="png-YI-QMS"/>
+                            <constraint firstItem="Bee-vy-t8E" firstAttribute="leading" secondItem="tA3-eU-eGk" secondAttribute="leading" id="sUK-xp-niH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tA3-eU-eGk"/>
                     </view>
+                    <connections>
+                        <outlet property="mediaTypePickerView" destination="Bee-vy-t8E" id="8vJ-gv-HC7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0sD-qA-Tl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="py6-L4-cRk"/>
+                <customObject id="py6-L4-cRk" customClass="MediaTypeInitailizer" customModule="ItunesSearchTests" customModuleProvider="target">
+                    <connections>
+                        <outlet property="view" destination="Kwh-1Q-cHq" id="HSM-Id-a8m"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="3273" y="251"/>
         </scene>

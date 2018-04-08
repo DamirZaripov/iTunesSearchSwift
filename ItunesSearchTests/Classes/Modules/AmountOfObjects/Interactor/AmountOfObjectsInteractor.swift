@@ -52,6 +52,9 @@ class AmountOfObjectsInteractor: AmountOfObjectsInteractorInput {
     func saveAmountOfObjects(with index: Int) {
         let amount = numberArray[index]
         userDefaultsManager.save(amountOfObjects: amount)
+        
+        let test = userDefaultsManager.getAmountOfObjects()
+        print(test)
     }
     
     func saveSearchByDevice(with index: Int) {
@@ -62,7 +65,7 @@ class AmountOfObjectsInteractor: AmountOfObjectsInteractorInput {
     
     func getSaveAmount() {
         let amount = userDefaultsManager.getAmountOfObjects()
-        let index = numberArray.index(after: amount)
+        guard let index = numberArray.index(of: amount) else { return }
         presenter.didFinishingGetAmountFromUserDefaults(with: index)
     }
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AmountOfObjectsView: UIViewController, AmountOfObjectsViewInput{
+class AmountOfObjectsView: UIViewController, AmountOfObjectsViewInput {
   
     @IBOutlet weak var searchByDevicesPickerView: UIPickerView!
     @IBOutlet weak var amountOfObjectsPickerView: UIPickerView!
@@ -20,6 +20,7 @@ class AmountOfObjectsView: UIViewController, AmountOfObjectsViewInput{
     
     let amountOfObjectsPickerViewTag = 0
     let searchByDevicesPickerViewTag = 1
+    let zeroIndexIdentifier = 0
    
     var presenter: AmountOfObjectsViewOutput!
     
@@ -60,11 +61,11 @@ class AmountOfObjectsView: UIViewController, AmountOfObjectsViewInput{
     }
     
     func set(selectedRowAtSearchByDevices indexOfRow: Int) {
-        searchByDevicesPickerView.selectRow(indexOfRow, inComponent: 0, animated: true)
+        searchByDevicesPickerView.selectRow(indexOfRow, inComponent: zeroIndexIdentifier, animated: true)
     }
     
     func set(selectedRowAtAmount indexOfRow: Int) {
-        amountOfObjectsPickerView.selectRow(indexOfRow, inComponent: 0, animated: true)
+        amountOfObjectsPickerView.selectRow(indexOfRow, inComponent: zeroIndexIdentifier, animated: true)
     }
     
 }

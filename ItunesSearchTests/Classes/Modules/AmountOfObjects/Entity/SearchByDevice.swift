@@ -11,6 +11,7 @@ import Foundation
 enum SearchByDevice: String {
     case iphone
     case ipad
+    case both
     
-    static let allDevices: [SearchByDevice] = [.iphone, .ipad]
+    static let allDevices: [SearchByDevice] = [.iphone, .ipad, .both]
 }

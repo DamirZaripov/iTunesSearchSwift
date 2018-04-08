@@ -16,6 +16,17 @@
 		FF052E9D207A1D8A001C1A0F /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052E9C207A1D8A001C1A0F /* UserDefaultsManager.swift */; };
 		FF052E9F207A1E99001C1A0F /* SearchByDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052E9E207A1E99001C1A0F /* SearchByDevice.swift */; };
 		FF052EA1207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA0207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift */; };
+		FF052EA4207A2893001C1A0F /* AmountOfObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA3207A2893001C1A0F /* AmountOfObjectsView.swift */; };
+		FF052EA6207A28B0001C1A0F /* AmountOfObjectsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA5207A28B0001C1A0F /* AmountOfObjectsViewInput.swift */; };
+		FF052EA8207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA7207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift */; };
+		FF052EAA207A2B33001C1A0F /* AmountOfObjectsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA9207A2B33001C1A0F /* AmountOfObjectsPresenter.swift */; };
+		FF052EAC207A2B50001C1A0F /* AmountOfObjectsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EAB207A2B50001C1A0F /* AmountOfObjectsInteractor.swift */; };
+		FF052EB0207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EAF207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift */; };
+		FF052EB2207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB1207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift */; };
+		FF052EB4207A2C16001C1A0F /* AmountOfObjectsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB3207A2C16001C1A0F /* AmountOfObjectsRouter.swift */; };
+		FF052EB6207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB5207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift */; };
+		FF052EB8207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB7207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift */; };
+		FF052EBA207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB9207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift */; };
 		FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E4F207977E00081F33F /* Storyboards.swift */; };
 		FF6C2E52207979750081F33F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E51207979750081F33F /* ReusableView.swift */; };
 		FF6C2E5720797BB50081F33F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5620797BB50081F33F /* Result.swift */; };
@@ -51,6 +62,17 @@
 		FF052E9C207A1D8A001C1A0F /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		FF052E9E207A1E99001C1A0F /* SearchByDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByDevice.swift; sourceTree = "<group>"; };
 		FF052EA0207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagerImpl.swift; sourceTree = "<group>"; };
+		FF052EA3207A2893001C1A0F /* AmountOfObjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsView.swift; sourceTree = "<group>"; };
+		FF052EA5207A28B0001C1A0F /* AmountOfObjectsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsViewInput.swift; sourceTree = "<group>"; };
+		FF052EA7207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsViewOutput.swift; sourceTree = "<group>"; };
+		FF052EA9207A2B33001C1A0F /* AmountOfObjectsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsPresenter.swift; sourceTree = "<group>"; };
+		FF052EAB207A2B50001C1A0F /* AmountOfObjectsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsInteractor.swift; sourceTree = "<group>"; };
+		FF052EAF207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsInteractorInput.swift; sourceTree = "<group>"; };
+		FF052EB1207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsInteractorOutput.swift; sourceTree = "<group>"; };
+		FF052EB3207A2C16001C1A0F /* AmountOfObjectsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsRouter.swift; sourceTree = "<group>"; };
+		FF052EB5207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsRouterInput.swift; sourceTree = "<group>"; };
+		FF052EB7207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsConfigurator.swift; sourceTree = "<group>"; };
+		FF052EB9207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsInitializer.swift; sourceTree = "<group>"; };
 		FF6C2E4F207977E00081F33F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		FF6C2E51207979750081F33F /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		FF6C2E5620797BB50081F33F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -200,6 +222,9 @@
 		FF052E93207A1BB5001C1A0F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF052EA3207A2893001C1A0F /* AmountOfObjectsView.swift */,
+				FF052EA5207A28B0001C1A0F /* AmountOfObjectsViewInput.swift */,
+				FF052EA7207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +232,7 @@
 		FF052E94207A1BB9001C1A0F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				FF052EA9207A2B33001C1A0F /* AmountOfObjectsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -214,6 +240,9 @@
 		FF052E95207A1BC0001C1A0F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				FF052EAB207A2B50001C1A0F /* AmountOfObjectsInteractor.swift */,
+				FF052EAF207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift */,
+				FF052EB1207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -221,6 +250,8 @@
 		FF052E96207A1BC7001C1A0F /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				FF052EB3207A2C16001C1A0F /* AmountOfObjectsRouter.swift */,
+				FF052EB5207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -236,6 +267,8 @@
 		FF052E98207A1BD2001C1A0F /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
+				FF052EB7207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift */,
+				FF052EB9207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -533,8 +566,11 @@
 				FF6C2E79207995030081F33F /* SettingsRouterInput.swift in Sources */,
 				FF052EA1207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift in Sources */,
 				FF052E9D207A1D8A001C1A0F /* UserDefaultsManager.swift in Sources */,
+				FF052EA6207A28B0001C1A0F /* AmountOfObjectsViewInput.swift in Sources */,
+				FF052EB2207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift in Sources */,
 				FF6C2E7B207995120081F33F /* SettingsRouter.swift in Sources */,
 				FF6C2E5920797BBF0081F33F /* ArrayResult.swift in Sources */,
+				FF052EB4207A2C16001C1A0F /* AmountOfObjectsRouter.swift in Sources */,
 				FF6C2E7220798B180081F33F /* SettingsInteractor.swift in Sources */,
 				FF6C2E5F2079854E0081F33F /* ModuleInput.swift in Sources */,
 				FF6C2E5B2079830A0081F33F /* CommonAlertsFactory.swift in Sources */,
@@ -542,12 +578,20 @@
 				FF6C2E7620798B390081F33F /* SettingsInteractorOutput.swift in Sources */,
 				FF6C2E5D207983EA0081F33F /* CommonAlertsFactoryImpl.swift in Sources */,
 				FF6C2E6A207988980081F33F /* SettingsView.swift in Sources */,
+				FF052EAA207A2B33001C1A0F /* AmountOfObjectsPresenter.swift in Sources */,
 				FF6C2E7020798B0A0081F33F /* SettingsPresenter.swift in Sources */,
 				FF6C2E612079856D0081F33F /* ModuleInputHandler.swift in Sources */,
+				FF052EB8207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift in Sources */,
+				FF052EAC207A2B50001C1A0F /* AmountOfObjectsInteractor.swift in Sources */,
+				FF052EA4207A2893001C1A0F /* AmountOfObjectsView.swift in Sources */,
+				FF052EB0207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift in Sources */,
 				FF052E9F207A1E99001C1A0F /* SearchByDevice.swift in Sources */,
 				FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */,
 				FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */,
+				FF052EBA207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift in Sources */,
+				FF052EB6207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift in Sources */,
 				FF6C2E6C207989E10081F33F /* SettingsViewInput.swift in Sources */,
+				FF052EA8207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift in Sources */,
 				FF6C2E5720797BB50081F33F /* Result.swift in Sources */,
 				FF6C2E7420798B280081F33F /* SettingsInteractorInput.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,

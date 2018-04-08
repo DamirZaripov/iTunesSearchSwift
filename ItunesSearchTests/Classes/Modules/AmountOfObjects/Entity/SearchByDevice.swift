@@ -1,5 +1,5 @@
 //
-//  SettingsRouterInput.swift
+//  SearchByDevice.swift
 //  ItunesSearchTests
 //
 //  Created by Damir Zaripov on 08.04.2018.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol SettingsRouterInput: class {
+enum SearchByDevice: String {
+    case iphone
+    case ipad
     
-    func showMediaTypeScreen()
-    func showAmountOfObiectsScreen()
-    
+    static let allDevices: [SearchByDevice] = [.iphone, .ipad]
 }

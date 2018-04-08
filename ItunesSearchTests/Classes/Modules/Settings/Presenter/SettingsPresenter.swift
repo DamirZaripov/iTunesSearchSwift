@@ -14,21 +14,22 @@ class SettingsPresenter: SettingsViewOutput, SettingsInteractorOutput {
     var interactor: SettingsInteractorInput!
     var router: SettingsRouterInput!
     
+    private let amountOfObjectsIndex = 0
+    private let mediaTypeIndex = 1
+    
     //MARK: - Settings view output
     
     func viewIsReady() {
-        
-    }
-    
-    func onViewWillAppear() {
-        
+        view.prepareTableView()
     }
     
     func didSelectSettingsRow(at indexPath: IndexPath) {
-        
+        let index = indexPath.row
+        if (index == amountOfObjectsIndex) {
+            router.showAmountOfObiectsScreen()
+        } else if (index == mediaTypeIndex) {
+            router.showMediaTypeScreen()
+        }
     }
-    
-    
-    
     
 }

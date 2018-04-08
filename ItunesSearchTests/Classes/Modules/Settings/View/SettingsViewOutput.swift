@@ -12,7 +12,5 @@ protocol SettingsViewOutput: class {
     
     func viewIsReady()
     
-    func onViewWillAppear()
-    
     func didSelectSettingsRow(at indexPath: IndexPath)
 }

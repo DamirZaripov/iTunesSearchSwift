@@ -22,5 +22,7 @@ class SettingsConfigurator {
         viewController.presenter = presenter
         
         interactor.presenter = presenter
+        
+        router.view = viewController
     }
 }

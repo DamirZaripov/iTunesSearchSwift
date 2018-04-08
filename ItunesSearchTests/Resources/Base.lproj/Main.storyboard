@@ -129,8 +129,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Настройки" id="I7E-ZL-2XQ"/>
                     <connections>
-                        <segue destination="4DL-7x-qjd" kind="show" identifier="showCountOfObiectsView" id="D6o-Ye-2Kx"/>
-                        <segue destination="Kwh-1Q-cHq" kind="show" identifier="showMediaTypeView" id="nnX-3C-Nfb"/>
+                        <segue destination="4DL-7x-qjd" kind="show" identifier="showAmountOfObiects" id="D6o-Ye-2Kx"/>
+                        <segue destination="Kwh-1Q-cHq" kind="show" identifier="showMediaType" id="nnX-3C-Nfb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O92-hd-b6g" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,10 +14,19 @@ class SettingsView: UITableViewController, SettingsViewInput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewIsReady()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
+    func prepareTableView() {
+        tableView.delegate = self
+    }
+    
+}
+
+extension SettingsView {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectSettingsRow(at: indexPath)
     }
     
 }

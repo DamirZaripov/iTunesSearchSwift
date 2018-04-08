@@ -9,14 +9,16 @@
 import UIKit
 
 class SettingsRouter: SettingsRouterInput {
-
-    weak var view: UIViewController!
     
-    func showMediaTypesScreen() {
-        
+    weak var view: UIViewController!
+    private let showMediaTypeIdentifier = "showMediaType"
+    private let showAmountOfObiectsIdentifier = "showAmountOfObiects"
+    
+    func showMediaTypeScreen() {
+        view.performSegue(withIdentifier: showMediaTypeIdentifier, sender: nil)
     }
     
-    func showCountOfMediaScreen() {
-        
+    func showAmountOfObiectsScreen() {
+        view.performSegue(withIdentifier: showAmountOfObiectsIdentifier, sender: nil)
     }
 }

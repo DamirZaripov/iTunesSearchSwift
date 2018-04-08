@@ -46,6 +46,7 @@
 		FF6C2E7B207995120081F33F /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7A207995120081F33F /* SettingsRouter.swift */; };
 		FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7C207995C70081F33F /* SettingsInitializer.swift */; };
 		FF6C2E7F207995E30081F33F /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7E207995E30081F33F /* SettingsConfigurator.swift */; };
+		FFDCFBC9207A5DC400F50FB7 /* EnumPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		FF6C2E7A207995120081F33F /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 		FF6C2E7C207995C70081F33F /* SettingsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInitializer.swift; sourceTree = "<group>"; };
 		FF6C2E7E207995E30081F33F /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +309,7 @@
 		FF6C2E4A207961310081F33F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FFDCFBC7207A5DAC00F50FB7 /* EnumPickerView */,
 				FF6C2E5520797B910081F33F /* AlertsFactory */,
 				FF6C2E5420797B860081F33F /* EnumResult */,
 				FF6C2E5320797B6E0081F33F /* ModuleInput */,
@@ -433,6 +436,14 @@
 			children = (
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		FFDCFBC7207A5DAC00F50FB7 /* EnumPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */,
+			);
+			path = EnumPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,6 +592,7 @@
 				FF052EAA207A2B33001C1A0F /* AmountOfObjectsPresenter.swift in Sources */,
 				FF6C2E7020798B0A0081F33F /* SettingsPresenter.swift in Sources */,
 				FF6C2E612079856D0081F33F /* ModuleInputHandler.swift in Sources */,
+				FFDCFBC9207A5DC400F50FB7 /* EnumPickerView.swift in Sources */,
 				FF052EB8207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift in Sources */,
 				FF052EAC207A2B50001C1A0F /* AmountOfObjectsInteractor.swift in Sources */,
 				FF052EA4207A2893001C1A0F /* AmountOfObjectsView.swift in Sources */,

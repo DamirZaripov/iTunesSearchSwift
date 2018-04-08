@@ -10,4 +10,11 @@ import Foundation
 
 protocol AmountOfObjectsInteractorOutput: class {
     
+    func didFinishingGetNumberOfRowsInComponent(with number: Int)
+    
+    func didFinishingGetTitleForRow(with title: String)
+    
+    func didFinishingGetAmountFromUserDefaults(with index: Int)
+    
+    func didFinishingGetSearchByDeviceFromUserDefaults(with index: Int)
 }

@@ -150,57 +150,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8l5-rF-IIs">
-                                <rect key="frame" x="0.0" y="183" width="320" height="105"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="DXC-QX-2UX"/>
-                                </constraints>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите количество объектов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgB-0d-dje">
-                                <rect key="frame" x="33" y="154" width="254" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество объектов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgB-0d-dje">
+                                <rect key="frame" x="74" y="136" width="172" height="20.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для каких дейвасов " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWc-zq-L6R">
+                                <rect key="frame" x="77.5" y="253" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-Zp-jzj">
-                                <rect key="frame" x="0.0" y="325" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="288" width="320" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="nWB-Gr-O64"/>
+                                    <constraint firstAttribute="height" constant="60" id="RyP-dL-Qba"/>
                                 </constraints>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите для каких дейвасов " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWc-zq-L6R">
-                                <rect key="frame" x="37" y="296" width="246" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3N-HO-6u9">
-                                <rect key="frame" x="81.5" y="438" width="157" height="30"/>
-                                <state key="normal" title="Сохранить настройки"/>
                                 <connections>
-                                    <action selector="saveSettingsButtonsPressed:" destination="4DL-7x-qjd" eventType="touchUpInside" id="uIN-F7-fwz"/>
+                                    <outlet property="dataSource" destination="4DL-7x-qjd" id="NmK-qA-EBb"/>
+                                    <outlet property="delegate" destination="4DL-7x-qjd" id="5ls-YF-NTj"/>
                                 </connections>
-                            </button>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxj-Zd-S2g">
+                                <rect key="frame" x="0.0" y="164" width="320" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gA7-IO-WXp"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="4DL-7x-qjd" id="w0V-OX-df4"/>
+                                    <outlet property="delegate" destination="4DL-7x-qjd" id="hcV-qf-17X"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8l5-rF-IIs" firstAttribute="top" secondItem="sgB-0d-dje" secondAttribute="bottom" constant="8" id="72n-IL-KXx"/>
-                            <constraint firstItem="nWc-zq-L6R" firstAttribute="centerX" secondItem="zVn-Lx-3eQ" secondAttribute="centerX" id="B0o-Iw-Vtm"/>
-                            <constraint firstItem="8l5-rF-IIs" firstAttribute="leading" secondItem="zVn-Lx-3eQ" secondAttribute="leading" id="COT-qs-IPQ"/>
-                            <constraint firstItem="sgB-0d-dje" firstAttribute="top" secondItem="zVn-Lx-3eQ" secondAttribute="top" constant="38" id="T07-7Q-JYJ"/>
-                            <constraint firstItem="qbe-Zp-jzj" firstAttribute="centerX" secondItem="nWc-zq-L6R" secondAttribute="centerX" id="T9I-Ls-tOq"/>
-                            <constraint firstItem="J3N-HO-6u9" firstAttribute="top" secondItem="qbe-Zp-jzj" secondAttribute="bottom" constant="8" id="cLG-0j-A1a"/>
-                            <constraint firstItem="sgB-0d-dje" firstAttribute="centerX" secondItem="zVn-Lx-3eQ" secondAttribute="centerX" id="iZY-SL-MaD"/>
-                            <constraint firstItem="8l5-rF-IIs" firstAttribute="trailing" secondItem="zVn-Lx-3eQ" secondAttribute="trailing" id="jTJ-Ef-5qb"/>
-                            <constraint firstItem="J3N-HO-6u9" firstAttribute="centerX" secondItem="zVn-Lx-3eQ" secondAttribute="centerX" id="x20-Cl-NjO"/>
-                            <constraint firstItem="qbe-Zp-jzj" firstAttribute="top" secondItem="nWc-zq-L6R" secondAttribute="bottom" constant="8" id="yIG-0W-i84"/>
-                            <constraint firstItem="nWc-zq-L6R" firstAttribute="top" secondItem="8l5-rF-IIs" secondAttribute="bottom" constant="8" id="zAy-Y3-ajC"/>
+                            <constraint firstItem="sgB-0d-dje" firstAttribute="centerX" secondItem="zVn-Lx-3eQ" secondAttribute="centerX" id="2bc-61-Y9G"/>
+                            <constraint firstItem="nWc-zq-L6R" firstAttribute="centerX" secondItem="zVn-Lx-3eQ" secondAttribute="centerX" id="8cx-1c-kxT"/>
+                            <constraint firstItem="qbe-Zp-jzj" firstAttribute="top" secondItem="nWc-zq-L6R" secondAttribute="bottom" constant="14" id="CQT-dT-HBb"/>
+                            <constraint firstItem="hxj-Zd-S2g" firstAttribute="leading" secondItem="zVn-Lx-3eQ" secondAttribute="leading" id="CdO-tf-asb"/>
+                            <constraint firstItem="sgB-0d-dje" firstAttribute="top" secondItem="zVn-Lx-3eQ" secondAttribute="top" constant="20" id="Ki9-9K-iCh"/>
+                            <constraint firstItem="nWc-zq-L6R" firstAttribute="top" secondItem="hxj-Zd-S2g" secondAttribute="bottom" constant="29" id="LRG-zC-gCa"/>
+                            <constraint firstItem="hxj-Zd-S2g" firstAttribute="top" secondItem="sgB-0d-dje" secondAttribute="bottom" constant="7.5" id="Wn0-Zu-MNJ"/>
+                            <constraint firstItem="qbe-Zp-jzj" firstAttribute="leading" secondItem="COI-cb-ko3" secondAttribute="leading" id="ZHn-p9-9hd"/>
+                            <constraint firstItem="hxj-Zd-S2g" firstAttribute="trailing" secondItem="zVn-Lx-3eQ" secondAttribute="trailing" id="fVG-Nm-QO0"/>
+                            <constraint firstItem="zVn-Lx-3eQ" firstAttribute="trailing" secondItem="qbe-Zp-jzj" secondAttribute="trailing" id="vdo-Qb-VuZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zVn-Lx-3eQ"/>
                     </view>
                     <connections>
-                        <outlet property="amountOfObjectsPickerView" destination="8l5-rF-IIs" id="Cm6-M5-r6g"/>
-                        <outlet property="saveSettingsButton" destination="J3N-HO-6u9" id="I2N-OC-joo"/>
+                        <outlet property="amountOfObjectsPickerView" destination="hxj-Zd-S2g" id="1nL-Wy-QSV"/>
                         <outlet property="searchByDevicesPickerView" destination="qbe-Zp-jzj" id="tgo-QK-4wn"/>
                     </connections>
                 </viewController>

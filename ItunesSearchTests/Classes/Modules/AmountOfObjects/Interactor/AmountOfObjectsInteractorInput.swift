@@ -10,4 +10,21 @@ import Foundation
 
 protocol AmountOfObjectsInteractorInput: class {
     
+    func prepareDate()
+    
+    func saveAmountOfObjects(with index: Int)
+    
+    func saveSearchByDevice(with index: Int)
+
+    func getNumberOfRowsForAmountPickerView()
+    
+    func getNumberOfRowsForSearchByDevicePickerView()
+    
+    func getTitleOfRowAtAmountPickerView(at index: Int)
+    
+    func getTitleOfRowAtSearchByDevicePickerView(at index: Int)
+    
+    func getSaveAmount()
+    
+    func getSaveSearchByDevice()
 }

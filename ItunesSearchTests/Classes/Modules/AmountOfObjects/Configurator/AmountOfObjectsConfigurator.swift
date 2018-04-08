@@ -14,6 +14,7 @@ class AmountOfObjectsConfigurator {
         let presenter = AmountOfObjectsPresenter()
         let interactor = AmountOfObjectsInteractor()
         let router = AmountOfObjectsRouter()
+        let userDefaultManager = UserDefaultsManagerImpl()
         
         view.presenter = presenter
         
@@ -22,6 +23,7 @@ class AmountOfObjectsConfigurator {
         presenter.view = view
         
         interactor.presenter = presenter
+        interactor.userDefaultsManager = userDefaultManager
         
         router.view = view
     }

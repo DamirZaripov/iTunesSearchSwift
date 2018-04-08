@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AmountOfObjectsView: UIViewController, AmountOfObjectsViewInput{
+class AmountOfObjectsView: UIViewController, AmountOfObjectsViewInput {
   
     @IBOutlet weak var searchByDevicesPickerView: UIPickerView!
     @IBOutlet weak var amountOfObjectsPickerView: UIPickerView!

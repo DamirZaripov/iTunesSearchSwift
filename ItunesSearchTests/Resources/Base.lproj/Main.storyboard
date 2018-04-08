@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="3273.75" y="-540.84507042253517"/>
         </scene>
-        <!--Медиа тип-->
+        <!--View-->
         <scene sceneID="4wu-Bv-0Yy">
             <objects>
-                <viewController title="Медиа тип" id="Kwh-1Q-cHq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediaTypeView" title="Медиа тип" id="Kwh-1Q-cHq" customClass="MediaTypeView" customModule="ItunesSearchTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7L4-cr-knE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +224,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0sD-qA-Tl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="py6-L4-cRk"/>
+                <customObject id="py6-L4-cRk" customClass="MediaTypeInitailizer" customModule="ItunesSearchTests" customModuleProvider="target">
+                    <connections>
+                        <outlet property="view" destination="Kwh-1Q-cHq" id="HSM-Id-a8m"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="3273" y="251"/>
         </scene>

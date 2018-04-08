@@ -47,6 +47,17 @@
 		FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7C207995C70081F33F /* SettingsInitializer.swift */; };
 		FF6C2E7F207995E30081F33F /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7E207995E30081F33F /* SettingsConfigurator.swift */; };
 		FFDCFBC9207A5DC400F50FB7 /* EnumPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */; };
+		FFDCFBCB207A7DB100F50FB7 /* MediaTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBCA207A7DB100F50FB7 /* MediaTypeView.swift */; };
+		FFDCFBCD207A7DBD00F50FB7 /* MediaTypeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBCC207A7DBD00F50FB7 /* MediaTypeViewInput.swift */; };
+		FFDCFBCF207A7DC500F50FB7 /* MediaTypeVIewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBCE207A7DC500F50FB7 /* MediaTypeVIewOutput.swift */; };
+		FFDCFBD1207A847A00F50FB7 /* MediaTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD0207A847A00F50FB7 /* MediaTypePresenter.swift */; };
+		FFDCFBD3207A84AC00F50FB7 /* MediaTypeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD2207A84AC00F50FB7 /* MediaTypeInteractor.swift */; };
+		FFDCFBD5207A84BC00F50FB7 /* MediaTypeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD4207A84BC00F50FB7 /* MediaTypeInteractorInput.swift */; };
+		FFDCFBD7207A84C500F50FB7 /* MediaTypeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD6207A84C500F50FB7 /* MediaTypeInteractorOutput.swift */; };
+		FFDCFBD9207A856A00F50FB7 /* MediaTypeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD8207A856A00F50FB7 /* MediaTypeRouter.swift */; };
+		FFDCFBDB207A857900F50FB7 /* MediaTypeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBDA207A857900F50FB7 /* MediaTypeRouterInput.swift */; };
+		FFDCFBDD207A860500F50FB7 /* MediaTypeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBDC207A860500F50FB7 /* MediaTypeConfigurator.swift */; };
+		FFDCFBDF207A861E00F50FB7 /* MediaTypeInitailizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBDE207A861E00F50FB7 /* MediaTypeInitailizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +105,17 @@
 		FF6C2E7C207995C70081F33F /* SettingsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInitializer.swift; sourceTree = "<group>"; };
 		FF6C2E7E207995E30081F33F /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
 		FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumPickerView.swift; sourceTree = "<group>"; };
+		FFDCFBCA207A7DB100F50FB7 /* MediaTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeView.swift; sourceTree = "<group>"; };
+		FFDCFBCC207A7DBD00F50FB7 /* MediaTypeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeViewInput.swift; sourceTree = "<group>"; };
+		FFDCFBCE207A7DC500F50FB7 /* MediaTypeVIewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeVIewOutput.swift; sourceTree = "<group>"; };
+		FFDCFBD0207A847A00F50FB7 /* MediaTypePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypePresenter.swift; sourceTree = "<group>"; };
+		FFDCFBD2207A84AC00F50FB7 /* MediaTypeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractor.swift; sourceTree = "<group>"; };
+		FFDCFBD4207A84BC00F50FB7 /* MediaTypeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractorInput.swift; sourceTree = "<group>"; };
+		FFDCFBD6207A84C500F50FB7 /* MediaTypeInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractorOutput.swift; sourceTree = "<group>"; };
+		FFDCFBD8207A856A00F50FB7 /* MediaTypeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeRouter.swift; sourceTree = "<group>"; };
+		FFDCFBDA207A857900F50FB7 /* MediaTypeRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeRouterInput.swift; sourceTree = "<group>"; };
+		FFDCFBDC207A860500F50FB7 /* MediaTypeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeConfigurator.swift; sourceTree = "<group>"; };
+		FFDCFBDE207A861E00F50FB7 /* MediaTypeInitailizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInitailizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +190,9 @@
 		FF052E8C207A1B49001C1A0F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFDCFBCA207A7DB100F50FB7 /* MediaTypeView.swift */,
+				FFDCFBCC207A7DBD00F50FB7 /* MediaTypeViewInput.swift */,
+				FFDCFBCE207A7DC500F50FB7 /* MediaTypeVIewOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +200,7 @@
 		FF052E8D207A1B4E001C1A0F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				FFDCFBD0207A847A00F50FB7 /* MediaTypePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -182,6 +208,9 @@
 		FF052E8E207A1B55001C1A0F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				FFDCFBD2207A84AC00F50FB7 /* MediaTypeInteractor.swift */,
+				FFDCFBD4207A84BC00F50FB7 /* MediaTypeInteractorInput.swift */,
+				FFDCFBD6207A84C500F50FB7 /* MediaTypeInteractorOutput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -189,6 +218,8 @@
 		FF052E8F207A1B5D001C1A0F /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				FFDCFBD8207A856A00F50FB7 /* MediaTypeRouter.swift */,
+				FFDCFBDA207A857900F50FB7 /* MediaTypeRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -204,6 +235,8 @@
 		FF052E91207A1B6A001C1A0F /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
+				FFDCFBDC207A860500F50FB7 /* MediaTypeConfigurator.swift */,
+				FFDCFBDE207A861E00F50FB7 /* MediaTypeInitailizer.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -574,14 +607,22 @@
 				FF6C2E6E207989F30081F33F /* SettingsViewOutput.swift in Sources */,
 				FF6C2E7F207995E30081F33F /* SettingsConfigurator.swift in Sources */,
 				FF6C2E52207979750081F33F /* ReusableView.swift in Sources */,
+				FFDCFBD9207A856A00F50FB7 /* MediaTypeRouter.swift in Sources */,
+				FFDCFBDF207A861E00F50FB7 /* MediaTypeInitailizer.swift in Sources */,
 				FF6C2E79207995030081F33F /* SettingsRouterInput.swift in Sources */,
+				FFDCFBDD207A860500F50FB7 /* MediaTypeConfigurator.swift in Sources */,
 				FF052EA1207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift in Sources */,
 				FF052E9D207A1D8A001C1A0F /* UserDefaultsManager.swift in Sources */,
 				FF052EA6207A28B0001C1A0F /* AmountOfObjectsViewInput.swift in Sources */,
 				FF052EB2207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift in Sources */,
+				FFDCFBD5207A84BC00F50FB7 /* MediaTypeInteractorInput.swift in Sources */,
+				FFDCFBCB207A7DB100F50FB7 /* MediaTypeView.swift in Sources */,
+				FFDCFBCD207A7DBD00F50FB7 /* MediaTypeViewInput.swift in Sources */,
 				FF6C2E7B207995120081F33F /* SettingsRouter.swift in Sources */,
 				FF6C2E5920797BBF0081F33F /* ArrayResult.swift in Sources */,
 				FF052EB4207A2C16001C1A0F /* AmountOfObjectsRouter.swift in Sources */,
+				FFDCFBD7207A84C500F50FB7 /* MediaTypeInteractorOutput.swift in Sources */,
+				FFDCFBD1207A847A00F50FB7 /* MediaTypePresenter.swift in Sources */,
 				FF6C2E7220798B180081F33F /* SettingsInteractor.swift in Sources */,
 				FF6C2E5F2079854E0081F33F /* ModuleInput.swift in Sources */,
 				FF6C2E5B2079830A0081F33F /* CommonAlertsFactory.swift in Sources */,
@@ -597,6 +638,8 @@
 				FF052EAC207A2B50001C1A0F /* AmountOfObjectsInteractor.swift in Sources */,
 				FF052EA4207A2893001C1A0F /* AmountOfObjectsView.swift in Sources */,
 				FF052EB0207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift in Sources */,
+				FFDCFBD3207A84AC00F50FB7 /* MediaTypeInteractor.swift in Sources */,
+				FFDCFBCF207A7DC500F50FB7 /* MediaTypeVIewOutput.swift in Sources */,
 				FF052E9F207A1E99001C1A0F /* SearchByDevice.swift in Sources */,
 				FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */,
 				FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */,
@@ -606,6 +649,7 @@
 				FF052EA8207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift in Sources */,
 				FF6C2E5720797BB50081F33F /* Result.swift in Sources */,
 				FF6C2E7420798B280081F33F /* SettingsInteractorInput.swift in Sources */,
+				FFDCFBDB207A857900F50FB7 /* MediaTypeRouterInput.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

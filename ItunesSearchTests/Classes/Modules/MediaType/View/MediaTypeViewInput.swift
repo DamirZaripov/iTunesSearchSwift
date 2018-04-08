@@ -10,4 +10,13 @@ import Foundation
 
 protocol MediaTypeViewInput: class {
     
+    func preparePickerView()
+    
+    func setNumberOfComponents(with number: Int)
+    
+    func setTitleForRow(with title: String)
+    
+    func setNumberOfRowsInComponent(with number: Int)
+    
+    func setSelectedRow( indexOfRow: Int)
 }

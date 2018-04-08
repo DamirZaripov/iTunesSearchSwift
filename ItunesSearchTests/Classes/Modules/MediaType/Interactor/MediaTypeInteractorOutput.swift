@@ -10,4 +10,9 @@ import Foundation
 
 protocol MediaTypeInteractorOutput: class {
     
+    func didFinishingGetNumberOfRowsInComponent(with number: Int)
+    
+    func didFinishingGetTitleForRow(with title: String)
+    
+    func didFinishingGetMediaType(with index: Int)
 }

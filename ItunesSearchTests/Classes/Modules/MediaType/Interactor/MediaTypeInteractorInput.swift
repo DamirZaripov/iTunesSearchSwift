@@ -10,4 +10,13 @@ import Foundation
 
 protocol MediaTypeInteractorInput: class {
     
+    func prepareDate()
+    
+    func saveMediaType(with index: Int)
+    
+    func getNumberOfRows()
+    
+    func getTitleOfRow(at index: Int) 
+    
+    func getSaveMediaType()
 }

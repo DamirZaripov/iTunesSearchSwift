@@ -364,6 +364,7 @@
 		FF6C2E4A207961310081F33F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FFCB5BA3207AC70100D3EFE7 /* Models */,
 				FFDCFBC7207A5DAC00F50FB7 /* EnumPickerView */,
 				FF6C2E5520797B910081F33F /* AlertsFactory */,
 				FF6C2E5420797B860081F33F /* EnumResult */,
@@ -376,6 +377,7 @@
 		FF6C2E4B2079771A0081F33F /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				FFCB5B9D207AB9D500D3EFE7 /* API */,
 				FF052E9B207A1D3A001C1A0F /* UserDefalutsManager */,
 			);
 			path = Managers;
@@ -644,9 +646,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -711,6 +716,7 @@
 				FF052EB2207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift in Sources */,
 				FFDCFBD5207A84BC00F50FB7 /* MediaTypeInteractorInput.swift in Sources */,
 				FFDCFBCB207A7DB100F50FB7 /* MediaTypeView.swift in Sources */,
+				FF9FE8BC207C06D7007316C1 /* SearchMediaResult.swift in Sources */,
 				FFDCFBCD207A7DBD00F50FB7 /* MediaTypeViewInput.swift in Sources */,
 				FF6C2E7B207995120081F33F /* SettingsRouter.swift in Sources */,
 				FF6C2E5920797BBF0081F33F /* ArrayResult.swift in Sources */,
@@ -741,6 +747,7 @@
 				FF052E9F207A1E99001C1A0F /* SearchByDevice.swift in Sources */,
 				FF9FE8DB207C286D007316C1 /* SearchMediaRouterInput.swift in Sources */,
 				FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */,
+				FF9FE8BE207C1987007316C1 /* ApiManagerImpl.swift in Sources */,
 				FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */,
 				FF052EBA207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift in Sources */,
 				FF052EB6207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift in Sources */,

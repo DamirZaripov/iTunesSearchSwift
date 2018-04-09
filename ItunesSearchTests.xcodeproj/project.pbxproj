@@ -27,6 +27,11 @@
 		FF052EB6207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB5207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift */; };
 		FF052EB8207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB7207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift */; };
 		FF052EBA207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB9207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift */; };
+		FF07C104207C29DA008AC5AC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C102207C29DA008AC5AC /* APIManager.swift */; };
+		FF07C105207C29DA008AC5AC /* ApiManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C103207C29DA008AC5AC /* ApiManagerImpl.swift */; };
+		FF07C10C207C29F9008AC5AC /* SearchMediaCellModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C108207C29F9008AC5AC /* SearchMediaCellModelImpl.swift */; };
+		FF07C10D207C29F9008AC5AC /* SearchMediaCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C109207C29F9008AC5AC /* SearchMediaCellModel.swift */; };
+		FF07C10E207C29F9008AC5AC /* SearchMediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C10B207C29F9008AC5AC /* SearchMediaResult.swift */; };
 		FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E4F207977E00081F33F /* Storyboards.swift */; };
 		FF6C2E52207979750081F33F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E51207979750081F33F /* ReusableView.swift */; };
 		FF6C2E5720797BB50081F33F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5620797BB50081F33F /* Result.swift */; };
@@ -96,6 +101,11 @@
 		FF052EB5207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsRouterInput.swift; sourceTree = "<group>"; };
 		FF052EB7207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsConfigurator.swift; sourceTree = "<group>"; };
 		FF052EB9207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsInitializer.swift; sourceTree = "<group>"; };
+		FF07C102207C29DA008AC5AC /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FF07C103207C29DA008AC5AC /* ApiManagerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManagerImpl.swift; sourceTree = "<group>"; };
+		FF07C108207C29F9008AC5AC /* SearchMediaCellModelImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaCellModelImpl.swift; sourceTree = "<group>"; };
+		FF07C109207C29F9008AC5AC /* SearchMediaCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaCellModel.swift; sourceTree = "<group>"; };
+		FF07C10B207C29F9008AC5AC /* SearchMediaResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaResult.swift; sourceTree = "<group>"; };
 		FF6C2E4F207977E00081F33F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		FF6C2E51207979750081F33F /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		FF6C2E5620797BB50081F33F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -339,6 +349,41 @@
 			path = UserDefalutsManager;
 			sourceTree = "<group>";
 		};
+		FF07C101207C29DA008AC5AC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C102207C29DA008AC5AC /* APIManager.swift */,
+				FF07C103207C29DA008AC5AC /* ApiManagerImpl.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FF07C106207C29F9008AC5AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C107207C29F9008AC5AC /* CellModel */,
+				FF07C10A207C29F9008AC5AC /* APIModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF07C107207C29F9008AC5AC /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C108207C29F9008AC5AC /* SearchMediaCellModelImpl.swift */,
+				FF07C109207C29F9008AC5AC /* SearchMediaCellModel.swift */,
+			);
+			path = CellModel;
+			sourceTree = "<group>";
+		};
+		FF07C10A207C29F9008AC5AC /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C10B207C29F9008AC5AC /* SearchMediaResult.swift */,
+			);
+			path = APIModel;
+			sourceTree = "<group>";
+		};
 		FF6C2E48207960E10081F33F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,7 +409,7 @@
 		FF6C2E4A207961310081F33F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				FFCB5BA3207AC70100D3EFE7 /* Models */,
+				FF07C106207C29F9008AC5AC /* Models */,
 				FFDCFBC7207A5DAC00F50FB7 /* EnumPickerView */,
 				FF6C2E5520797B910081F33F /* AlertsFactory */,
 				FF6C2E5420797B860081F33F /* EnumResult */,
@@ -377,7 +422,7 @@
 		FF6C2E4B2079771A0081F33F /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				FFCB5B9D207AB9D500D3EFE7 /* API */,
+				FF07C101207C29DA008AC5AC /* API */,
 				FF052E9B207A1D3A001C1A0F /* UserDefalutsManager */,
 			);
 			path = Managers;
@@ -701,6 +746,7 @@
 				FF9FE8D7207C286D007316C1 /* SearchMediaInteractorInput.swift in Sources */,
 				FF6C2E6E207989F30081F33F /* SettingsViewOutput.swift in Sources */,
 				FF6C2E7F207995E30081F33F /* SettingsConfigurator.swift in Sources */,
+				FF07C104207C29DA008AC5AC /* APIManager.swift in Sources */,
 				FF6C2E52207979750081F33F /* ReusableView.swift in Sources */,
 				FF9FE8D8207C286D007316C1 /* SearchMediaInteractorOutput.swift in Sources */,
 				FF9FE8D1207C286D007316C1 /* SearchMediaPresenter.swift in Sources */,
@@ -709,14 +755,17 @@
 				FFDCFBDF207A861E00F50FB7 /* MediaTypeInitailizer.swift in Sources */,
 				FF9FE8D4207C286D007316C1 /* SearchMediaViewOutput.swift in Sources */,
 				FF6C2E79207995030081F33F /* SettingsRouterInput.swift in Sources */,
+				FF07C10C207C29F9008AC5AC /* SearchMediaCellModelImpl.swift in Sources */,
 				FFDCFBDD207A860500F50FB7 /* MediaTypeConfigurator.swift in Sources */,
 				FF052EA1207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift in Sources */,
 				FF052E9D207A1D8A001C1A0F /* UserDefaultsManager.swift in Sources */,
 				FF052EA6207A28B0001C1A0F /* AmountOfObjectsViewInput.swift in Sources */,
 				FF052EB2207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift in Sources */,
 				FFDCFBD5207A84BC00F50FB7 /* MediaTypeInteractorInput.swift in Sources */,
+				FF07C105207C29DA008AC5AC /* ApiManagerImpl.swift in Sources */,
+				FF07C10D207C29F9008AC5AC /* SearchMediaCellModel.swift in Sources */,
 				FFDCFBCB207A7DB100F50FB7 /* MediaTypeView.swift in Sources */,
-				FF9FE8BC207C06D7007316C1 /* SearchMediaResult.swift in Sources */,
+				FF07C10E207C29F9008AC5AC /* SearchMediaResult.swift in Sources */,
 				FFDCFBCD207A7DBD00F50FB7 /* MediaTypeViewInput.swift in Sources */,
 				FF6C2E7B207995120081F33F /* SettingsRouter.swift in Sources */,
 				FF6C2E5920797BBF0081F33F /* ArrayResult.swift in Sources */,
@@ -747,7 +796,6 @@
 				FF052E9F207A1E99001C1A0F /* SearchByDevice.swift in Sources */,
 				FF9FE8DB207C286D007316C1 /* SearchMediaRouterInput.swift in Sources */,
 				FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */,
-				FF9FE8BE207C1987007316C1 /* ApiManagerImpl.swift in Sources */,
 				FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */,
 				FF052EBA207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift in Sources */,
 				FF052EB6207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift in Sources */,

@@ -10,30 +10,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Поиск-->
+        <!--View-->
         <scene sceneID="yjX-ky-AEp">
             <objects>
-                <viewController id="QSG-oY-AyE" sceneMemberID="viewController">
+                <viewController id="QSG-oY-AyE" customClass="SearchMediaView" customModule="ItunesSearchTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nmh-4j-c1H">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xfk-HN-obu">
-                                <rect key="frame" x="0.0" y="116" width="320" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-ek-gqu">
+                                <rect key="frame" x="0.0" y="116" width="320" height="403"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QSG-oY-AyE" id="n5c-zg-y0y"/>
+                                    <outlet property="delegate" destination="QSG-oY-AyE" id="Vwq-zH-bse"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Xfk-HN-obu" firstAttribute="top" secondItem="xM8-aT-Qzs" secondAttribute="top" id="7Ib-ab-Fvu"/>
-                            <constraint firstItem="Xfk-HN-obu" firstAttribute="trailing" secondItem="xM8-aT-Qzs" secondAttribute="trailing" id="RhM-Hw-ASS"/>
-                            <constraint firstItem="Xfk-HN-obu" firstAttribute="leading" secondItem="xM8-aT-Qzs" secondAttribute="leading" id="irx-xg-Svd"/>
+                            <constraint firstItem="ffw-ek-gqu" firstAttribute="top" secondItem="xM8-aT-Qzs" secondAttribute="top" id="Kb2-xa-iZ6"/>
+                            <constraint firstItem="ffw-ek-gqu" firstAttribute="leading" secondItem="xM8-aT-Qzs" secondAttribute="leading" id="QJL-N3-Rbt"/>
+                            <constraint firstItem="xM8-aT-Qzs" firstAttribute="trailing" secondItem="ffw-ek-gqu" secondAttribute="trailing" id="XgF-rO-07D"/>
+                            <constraint firstItem="xM8-aT-Qzs" firstAttribute="bottom" secondItem="ffw-ek-gqu" secondAttribute="bottom" id="yuo-nm-KVk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xM8-aT-Qzs"/>
                     </view>
                     <navigationItem key="navigationItem" title="Поиск" id="dmc-1z-hjV"/>
+                    <connections>
+                        <outlet property="mediaTableView" destination="ffw-ek-gqu" id="1DA-3n-zJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wNF-bi-XRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Mb5-kG-sp0" customClass="SearchMediaInitializer" customModule="ItunesSearchTests" customModuleProvider="target">
+                    <connections>
+                        <outlet property="view" destination="QSG-oY-AyE" id="i96-gp-Rut"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="2063.1999999999998" y="857.72113943028489"/>
         </scene>

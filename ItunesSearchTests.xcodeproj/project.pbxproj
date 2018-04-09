@@ -46,6 +46,17 @@
 		FF6C2E7B207995120081F33F /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7A207995120081F33F /* SettingsRouter.swift */; };
 		FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7C207995C70081F33F /* SettingsInitializer.swift */; };
 		FF6C2E7F207995E30081F33F /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7E207995E30081F33F /* SettingsConfigurator.swift */; };
+		FF9FE8D1207C286D007316C1 /* SearchMediaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C2207C286D007316C1 /* SearchMediaPresenter.swift */; };
+		FF9FE8D2207C286D007316C1 /* SearchMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C4207C286D007316C1 /* SearchMediaViewInput.swift */; };
+		FF9FE8D3207C286D007316C1 /* SearchMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C5207C286D007316C1 /* SearchMediaView.swift */; };
+		FF9FE8D4207C286D007316C1 /* SearchMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C6207C286D007316C1 /* SearchMediaViewOutput.swift */; };
+		FF9FE8D5207C286D007316C1 /* SearchMediaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C8207C286D007316C1 /* SearchMediaConfigurator.swift */; };
+		FF9FE8D6207C286D007316C1 /* SearchMediaInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C9207C286D007316C1 /* SearchMediaInitializer.swift */; };
+		FF9FE8D7207C286D007316C1 /* SearchMediaInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8CB207C286D007316C1 /* SearchMediaInteractorInput.swift */; };
+		FF9FE8D8207C286D007316C1 /* SearchMediaInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8CC207C286D007316C1 /* SearchMediaInteractorOutput.swift */; };
+		FF9FE8D9207C286D007316C1 /* SearchMediaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8CD207C286D007316C1 /* SearchMediaInteractor.swift */; };
+		FF9FE8DA207C286D007316C1 /* SearchMediaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8CF207C286D007316C1 /* SearchMediaRouter.swift */; };
+		FF9FE8DB207C286D007316C1 /* SearchMediaRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8D0207C286D007316C1 /* SearchMediaRouterInput.swift */; };
 		FFDCFBC9207A5DC400F50FB7 /* EnumPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */; };
 		FFDCFBCB207A7DB100F50FB7 /* MediaTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBCA207A7DB100F50FB7 /* MediaTypeView.swift */; };
 		FFDCFBCD207A7DBD00F50FB7 /* MediaTypeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBCC207A7DBD00F50FB7 /* MediaTypeViewInput.swift */; };
@@ -104,6 +115,17 @@
 		FF6C2E7A207995120081F33F /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 		FF6C2E7C207995C70081F33F /* SettingsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInitializer.swift; sourceTree = "<group>"; };
 		FF6C2E7E207995E30081F33F /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		FF9FE8C2207C286D007316C1 /* SearchMediaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaPresenter.swift; sourceTree = "<group>"; };
+		FF9FE8C4207C286D007316C1 /* SearchMediaViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaViewInput.swift; sourceTree = "<group>"; };
+		FF9FE8C5207C286D007316C1 /* SearchMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaView.swift; sourceTree = "<group>"; };
+		FF9FE8C6207C286D007316C1 /* SearchMediaViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaViewOutput.swift; sourceTree = "<group>"; };
+		FF9FE8C8207C286D007316C1 /* SearchMediaConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaConfigurator.swift; sourceTree = "<group>"; };
+		FF9FE8C9207C286D007316C1 /* SearchMediaInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInitializer.swift; sourceTree = "<group>"; };
+		FF9FE8CB207C286D007316C1 /* SearchMediaInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorInput.swift; sourceTree = "<group>"; };
+		FF9FE8CC207C286D007316C1 /* SearchMediaInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorOutput.swift; sourceTree = "<group>"; };
+		FF9FE8CD207C286D007316C1 /* SearchMediaInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractor.swift; sourceTree = "<group>"; };
+		FF9FE8CF207C286D007316C1 /* SearchMediaRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaRouter.swift; sourceTree = "<group>"; };
+		FF9FE8D0207C286D007316C1 /* SearchMediaRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaRouterInput.swift; sourceTree = "<group>"; };
 		FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumPickerView.swift; sourceTree = "<group>"; };
 		FFDCFBCA207A7DB100F50FB7 /* MediaTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeView.swift; sourceTree = "<group>"; };
 		FFDCFBCC207A7DBD00F50FB7 /* MediaTypeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeViewInput.swift; sourceTree = "<group>"; };
@@ -362,6 +384,7 @@
 		FF6C2E4C207977200081F33F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FF9FE8BF207C286D007316C1 /* SearchMedia */,
 				FF052E92207A1B75001C1A0F /* AmountOfObjects */,
 				FF052E8B207A1B17001C1A0F /* MediaType */,
 				FF6C2E622079884E0081F33F /* Settings */,
@@ -469,6 +492,72 @@
 			children = (
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF9FE8BF207C286D007316C1 /* SearchMedia */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8C0207C286D007316C1 /* Entity */,
+				FF9FE8C1207C286D007316C1 /* Presenter */,
+				FF9FE8C3207C286D007316C1 /* View */,
+				FF9FE8C7207C286D007316C1 /* Configurator */,
+				FF9FE8CA207C286D007316C1 /* Interactor */,
+				FF9FE8CE207C286D007316C1 /* Router */,
+			);
+			path = SearchMedia;
+			sourceTree = "<group>";
+		};
+		FF9FE8C0207C286D007316C1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF9FE8C1207C286D007316C1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8C2207C286D007316C1 /* SearchMediaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FF9FE8C3207C286D007316C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8C4207C286D007316C1 /* SearchMediaViewInput.swift */,
+				FF9FE8C5207C286D007316C1 /* SearchMediaView.swift */,
+				FF9FE8C6207C286D007316C1 /* SearchMediaViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF9FE8C7207C286D007316C1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8C8207C286D007316C1 /* SearchMediaConfigurator.swift */,
+				FF9FE8C9207C286D007316C1 /* SearchMediaInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FF9FE8CA207C286D007316C1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8CB207C286D007316C1 /* SearchMediaInteractorInput.swift */,
+				FF9FE8CC207C286D007316C1 /* SearchMediaInteractorOutput.swift */,
+				FF9FE8CD207C286D007316C1 /* SearchMediaInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FF9FE8CE207C286D007316C1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8CF207C286D007316C1 /* SearchMediaRouter.swift */,
+				FF9FE8D0207C286D007316C1 /* SearchMediaRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		FFDCFBC7207A5DAC00F50FB7 /* EnumPickerView */ = {
@@ -604,11 +693,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9FE8D7207C286D007316C1 /* SearchMediaInteractorInput.swift in Sources */,
 				FF6C2E6E207989F30081F33F /* SettingsViewOutput.swift in Sources */,
 				FF6C2E7F207995E30081F33F /* SettingsConfigurator.swift in Sources */,
 				FF6C2E52207979750081F33F /* ReusableView.swift in Sources */,
+				FF9FE8D8207C286D007316C1 /* SearchMediaInteractorOutput.swift in Sources */,
+				FF9FE8D1207C286D007316C1 /* SearchMediaPresenter.swift in Sources */,
 				FFDCFBD9207A856A00F50FB7 /* MediaTypeRouter.swift in Sources */,
+				FF9FE8DA207C286D007316C1 /* SearchMediaRouter.swift in Sources */,
 				FFDCFBDF207A861E00F50FB7 /* MediaTypeInitailizer.swift in Sources */,
+				FF9FE8D4207C286D007316C1 /* SearchMediaViewOutput.swift in Sources */,
 				FF6C2E79207995030081F33F /* SettingsRouterInput.swift in Sources */,
 				FFDCFBDD207A860500F50FB7 /* MediaTypeConfigurator.swift in Sources */,
 				FF052EA1207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift in Sources */,
@@ -623,8 +717,11 @@
 				FF052EB4207A2C16001C1A0F /* AmountOfObjectsRouter.swift in Sources */,
 				FFDCFBD7207A84C500F50FB7 /* MediaTypeInteractorOutput.swift in Sources */,
 				FFDCFBD1207A847A00F50FB7 /* MediaTypePresenter.swift in Sources */,
+				FF9FE8D9207C286D007316C1 /* SearchMediaInteractor.swift in Sources */,
 				FF6C2E7220798B180081F33F /* SettingsInteractor.swift in Sources */,
 				FF6C2E5F2079854E0081F33F /* ModuleInput.swift in Sources */,
+				FF9FE8D2207C286D007316C1 /* SearchMediaViewInput.swift in Sources */,
+				FF9FE8D6207C286D007316C1 /* SearchMediaInitializer.swift in Sources */,
 				FF6C2E5B2079830A0081F33F /* CommonAlertsFactory.swift in Sources */,
 				FF052E9A207A1C2F001C1A0F /* MediaTypes.swift in Sources */,
 				FF6C2E7620798B390081F33F /* SettingsInteractorOutput.swift in Sources */,
@@ -637,14 +734,17 @@
 				FF052EB8207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift in Sources */,
 				FF052EAC207A2B50001C1A0F /* AmountOfObjectsInteractor.swift in Sources */,
 				FF052EA4207A2893001C1A0F /* AmountOfObjectsView.swift in Sources */,
+				FF9FE8D3207C286D007316C1 /* SearchMediaView.swift in Sources */,
 				FF052EB0207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift in Sources */,
 				FFDCFBD3207A84AC00F50FB7 /* MediaTypeInteractor.swift in Sources */,
 				FFDCFBCF207A7DC500F50FB7 /* MediaTypeVIewOutput.swift in Sources */,
 				FF052E9F207A1E99001C1A0F /* SearchByDevice.swift in Sources */,
+				FF9FE8DB207C286D007316C1 /* SearchMediaRouterInput.swift in Sources */,
 				FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */,
 				FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */,
 				FF052EBA207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift in Sources */,
 				FF052EB6207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift in Sources */,
+				FF9FE8D5207C286D007316C1 /* SearchMediaConfigurator.swift in Sources */,
 				FF6C2E6C207989E10081F33F /* SettingsViewInput.swift in Sources */,
 				FF052EA8207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift in Sources */,
 				FF6C2E5720797BB50081F33F /* Result.swift in Sources */,

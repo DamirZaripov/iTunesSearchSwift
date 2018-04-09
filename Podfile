@@ -7,4 +7,6 @@ target 'ItunesSearchTests' do
 
   # Pods for ItunesSearchTests
 
+pod 'Alamofire', '~> 4.7'
+
 end

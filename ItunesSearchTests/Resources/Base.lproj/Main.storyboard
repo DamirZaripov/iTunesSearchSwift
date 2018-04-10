@@ -21,14 +21,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-ek-gqu">
                                 <rect key="frame" x="0.0" y="113" width="320" height="406"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <searchBar key="tableFooterView" contentMode="redraw" text="" id="JEk-Vr-joO">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="ffw-ek-gqu" id="TF9-ky-kdT"/>
-                                    </connections>
-                                </searchBar>
                                 <connections>
                                     <outlet property="dataSource" destination="QSG-oY-AyE" id="n5c-zg-y0y"/>
                                     <outlet property="delegate" destination="QSG-oY-AyE" id="Vwq-zH-bse"/>

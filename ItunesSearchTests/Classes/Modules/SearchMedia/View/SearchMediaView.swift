@@ -17,15 +17,18 @@ class SearchMediaView: UIViewController, SearchMediaViewInput {
     
     let mediaCellIdentifier = "mediaCell"
     let mediaCellTableViewNibName = "MediaTableViewCell"
+    let estimatedRowHeight: CGFloat = 44
     
-    lazy var searchController: UISearchController = {
-        return UISearchController(searchResultsController: nil)
-    }()
-    
+    var searchController: UISearchController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewIsReady()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        presenter.OnViewDidAppear()
     }
     
     func prepareTableView() {
@@ -33,9 +36,12 @@ class SearchMediaView: UIViewController, SearchMediaViewInput {
         mediaTableView.register(nib, forCellReuseIdentifier: mediaCellIdentifier)
         mediaTableView.delegate = searchMediaDataSource
         mediaTableView.dataSource = searchMediaDataSource
+        mediaTableView.estimatedRowHeight = estimatedRowHeight
+        mediaTableView.rowHeight = UITableViewAutomaticDimension
     }
     
     func prepareSearchController() {
+        searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController

@@ -15,8 +15,6 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
     var apiManager: APIManager!
     var userDefaultManager: UserDefaultsManager!
     
-    var mediaArray = [SearchMediaCellModelImpl]()
-    
     func getSearchResult(with term: String) {
         
         let limit = userDefaultManager.getAmountOfObjects()
@@ -29,16 +27,21 @@ class SearchMediaInteractor: SearchMediaInteractorInput {
         apiManager.getMedia(term: term, limit: limitString, mediaType: mediaTypeString, deviceType: deviceTypeString) { [weak self] (result) in
             
             guard let strongSelf = self else { return }
-            let medias = strongSelf.convertModels(with: result)
-            self?.presenter.didFinishingLoadSearchMediaResult(with: medias)
+            
+            DispatchQueue.main.async {
+                strongSelf.convertModels(with: result)
+            }
         }
     }
     
-    private func convertModels(with results: SearchMediaResult) -> [SearchMediaCellModelImpl] {
+    private func convertModels(with results: SearchMediaResult) {
+        
+        var mediaArray = [SearchMediaCellModelImpl]()
+        
         for media in results.results {
             let newMedia = SearchMediaCellModelImpl(author: media.artistName, description: media.shortDescription, imageURL: media.artworkUrl60, price: media.trackPrice, viewURL: media.trackViewUrl, name: media.trackName)
             mediaArray.append(newMedia)
         }
-        return mediaArray
+        presenter.didFinishingLoadSearchMediaResult(with: mediaArray)
     }
 }

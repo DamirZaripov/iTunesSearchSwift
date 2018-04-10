@@ -6,5 +6,6 @@ target 'ItunesSearchTests' do
   use_frameworks!
 
   # Pods for ItunesSearchTests
+pod 'SDWebImage', '~> 4.0'
 
 end

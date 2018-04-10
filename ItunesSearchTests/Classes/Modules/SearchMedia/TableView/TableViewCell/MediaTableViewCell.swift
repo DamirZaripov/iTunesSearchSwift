@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MediaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var constraintDescriptionToButtom: NSLayoutConstraint!
-    @IBOutlet weak var constraintImageToBottom: NSLayoutConstraint!
-    @IBOutlet weak var constraintImageToDescription: NSLayoutConstraint!
+    @IBOutlet weak var constraintPriceToDescription: NSLayoutConstraint!
+    @IBOutlet weak var constraintPriceToBottom: NSLayoutConstraint!
     
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -28,17 +29,28 @@ class MediaTableViewCell: UITableViewCell {
         mediaImageView.image = nil
     }
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        constraintPriceToBottom.priority = .defaultLow
+        constraintDescriptionToButtom.priority = .defaultHigh
+        constraintPriceToDescription.priority = .defaultHigh
+    }
+
     func prepareCell(with cellModel: SearchMediaCellModel) {
+        
+        downloadImage(with: cellModel.imageURL)
         
         authorLabel.text = cellModel.author
         nameLabel.text = cellModel.name
         
         if let description = cellModel.description {
+            descriptionLabel.isHidden = false
             descriptionLabel.text = description
         } else {
-            constraintImageToBottom.priority = .defaultHigh
+            constraintPriceToBottom.priority = .defaultHigh
             constraintDescriptionToButtom.priority = .defaultLow
-            constraintImageToDescription.priority = .defaultLow
+            constraintPriceToDescription.priority = .defaultLow
+            descriptionLabel.isHidden = true
         }
         
         if let price = cellModel.price {
@@ -48,4 +60,9 @@ class MediaTableViewCell: UITableViewCell {
         }
         
     }
+    
+    func downloadImage(with url: URL) {
+        mediaImageView.sd_setImage(with: url, completed: nil)
+    }
+    
 }

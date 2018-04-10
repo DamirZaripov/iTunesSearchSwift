@@ -27,7 +27,7 @@ class SearchMediaDataSource: NSObject, SearchMediaDataSourceInput {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: mediaCellIdentifier , for: indexPath) as! MediaTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: mediaCellIdentifier, for: indexPath) as! MediaTableViewCell
         let cellModel = cellModels[indexPath.row]
         
         cell.prepareCell(with: cellModel)

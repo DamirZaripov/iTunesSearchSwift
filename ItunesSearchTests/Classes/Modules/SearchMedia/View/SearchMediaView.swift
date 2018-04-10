@@ -47,6 +47,10 @@ class SearchMediaView: UIViewController, SearchMediaViewInput {
         navigationItem.searchController = searchController
         definesPresentationContext = true
     }
+
+    func prepareDelegates() {
+        searchMediaDataSource.cellPressedDelegate = presenter as? CellPressedDelegate
+    }
     
     func set(cellModels: [SearchMediaCellModel]) {
         searchMediaDataSource.setCellModels(with: cellModels)

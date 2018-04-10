@@ -10,6 +10,8 @@ import UIKit
 
 protocol SearchMediaDataSourceInput: UITableViewDelegate, UITableViewDataSource {
     
+    var cellPressedDelegate: CellPressedDelegate? { get set }
+    
     func setCellModels(with models: [SearchMediaCellModel])
     func clearTableView()
     

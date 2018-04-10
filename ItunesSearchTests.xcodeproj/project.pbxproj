@@ -36,6 +36,7 @@
 		FF07C115207C2C52008AC5AC /* MediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF07C113207C2C52008AC5AC /* MediaTableViewCell.xib */; };
 		FF07C117207C2D05008AC5AC /* SearchMediaDataSourceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C116207C2D05008AC5AC /* SearchMediaDataSourceInput.swift */; };
 		FF07C119207C2D72008AC5AC /* SearchMediaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C118207C2D72008AC5AC /* SearchMediaDataSource.swift */; };
+		FF07C11E207D7389008AC5AC /* CellPressedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C11D207D7389008AC5AC /* CellPressedDelegate.swift */; };
 		FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E4F207977E00081F33F /* Storyboards.swift */; };
 		FF6C2E52207979750081F33F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E51207979750081F33F /* ReusableView.swift */; };
 		FF6C2E5720797BB50081F33F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5620797BB50081F33F /* Result.swift */; };
@@ -114,6 +115,7 @@
 		FF07C113207C2C52008AC5AC /* MediaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaTableViewCell.xib; sourceTree = "<group>"; };
 		FF07C116207C2D05008AC5AC /* SearchMediaDataSourceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDataSourceInput.swift; sourceTree = "<group>"; };
 		FF07C118207C2D72008AC5AC /* SearchMediaDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDataSource.swift; sourceTree = "<group>"; };
+		FF07C11D207D7389008AC5AC /* CellPressedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPressedDelegate.swift; sourceTree = "<group>"; };
 		FF6C2E4F207977E00081F33F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		FF6C2E51207979750081F33F /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		FF6C2E5620797BB50081F33F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -419,6 +421,14 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		FF07C11C207D735B008AC5AC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C11D207D7389008AC5AC /* CellPressedDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		FF6C2E48207960E10081F33F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,6 +454,7 @@
 		FF6C2E4A207961310081F33F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FF07C11C207D735B008AC5AC /* Delegates */,
 				FF07C106207C29F9008AC5AC /* Models */,
 				FFDCFBC7207A5DAC00F50FB7 /* EnumPickerView */,
 				FF6C2E5520797B910081F33F /* AlertsFactory */,
@@ -796,6 +807,7 @@
 				FF07C10C207C29F9008AC5AC /* SearchMediaCellModelImpl.swift in Sources */,
 				FFDCFBDD207A860500F50FB7 /* MediaTypeConfigurator.swift in Sources */,
 				FF052EA1207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift in Sources */,
+				FF07C11E207D7389008AC5AC /* CellPressedDelegate.swift in Sources */,
 				FF052E9D207A1D8A001C1A0F /* UserDefaultsManager.swift in Sources */,
 				FF052EA6207A28B0001C1A0F /* AmountOfObjectsViewInput.swift in Sources */,
 				FF052EB2207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift in Sources */,
@@ -993,7 +1005,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33NC89QWWR;
 				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = iOSLab.ItunesSearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1009,7 +1024,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33NC89QWWR;
 				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = iOSLab.ItunesSearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

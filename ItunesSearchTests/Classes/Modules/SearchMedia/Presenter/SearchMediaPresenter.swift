@@ -17,6 +17,7 @@ class SearchMediaPresenter: SearchMediaViewOutput, SearchMediaInteractorOutput {
     func viewIsReady() {
         view.prepareTableView()
         view.prepareSearchController()
+        view.prepareDelegates()
     }
     
     func OnViewDidAppear() {
@@ -30,6 +31,14 @@ class SearchMediaPresenter: SearchMediaViewOutput, SearchMediaInteractorOutput {
     func didFinishingLoadSearchMediaResult(with result: [SearchMediaCellModel]) {
         view.set(cellModels: result)
         view.reloadTableView()
+    }
+    
+}
+
+extension SearchMediaPresenter: CellPressedDelegate {
+    
+    func showPage(with url: URL) {
+        router.showPage(with: url)
     }
     
 }

@@ -28,5 +28,7 @@ class SearchMediaConfigurator {
         interactor.presenter = presenter
         interactor.apiManager = apiManager
         interactor.userDefaultManager = userDefaultManager
+        
+        router.view = view
     }
 }

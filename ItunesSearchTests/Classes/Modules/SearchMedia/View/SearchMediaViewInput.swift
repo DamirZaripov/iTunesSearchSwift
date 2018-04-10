@@ -12,6 +12,7 @@ protocol SearchMediaViewInput: class {
     
     func prepareTableView()
     func prepareSearchController()
+    func prepareDelegates()
     func set(cellModels: [SearchMediaCellModel])
     func reloadTableView()
     func clearDataSource()

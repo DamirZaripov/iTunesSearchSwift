@@ -12,6 +12,7 @@ class SearchMediaDataSource: NSObject, SearchMediaDataSourceInput {
     
     var cellModels = [SearchMediaCellModel]()
     let mediaCellIdentifier = "mediaCell"
+    var cellPressedDelegate: CellPressedDelegate?
     
     func setCellModels(with models: [SearchMediaCellModel]) {
         cellModels = models
@@ -34,5 +35,10 @@ class SearchMediaDataSource: NSObject, SearchMediaDataSourceInput {
         return cell        
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellModelURL = cellModels[indexPath.row].viewURL
+        cellPressedDelegate?.showPage(with: cellModelURL)
+    }
     
 }

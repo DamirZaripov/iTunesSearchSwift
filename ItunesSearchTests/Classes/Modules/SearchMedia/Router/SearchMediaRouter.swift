@@ -6,8 +6,16 @@
 //  Copyright © 2018 iOSLab. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import SafariServices
 
 class SearchMediaRouter: SearchMediaRouterInput {
+
+    weak var view: UIViewController!
+    
+    func showPage(with url: URL) {
+        let safariViewController = SFSafariViewController(url: url)
+        view.present(safariViewController, animated: true, completion: nil)
+    }
     
 }

@@ -9,5 +9,7 @@
 import Foundation
 
 protocol SearchMediaInteractorOutput: class {
+ 
+    func didFinishingLoadSearchMediaResult(with result: [SearchMediaCellModel])
     
 }

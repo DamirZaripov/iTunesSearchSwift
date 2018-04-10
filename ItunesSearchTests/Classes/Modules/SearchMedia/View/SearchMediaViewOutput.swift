@@ -10,4 +10,7 @@ import Foundation
 
 protocol SearchMediaViewOutput: class {
     
+    func viewIsReady()
+    func getMedia(by text: String)
+    
 }

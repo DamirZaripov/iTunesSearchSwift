@@ -14,4 +14,23 @@ class SearchMediaPresenter: SearchMediaViewOutput, SearchMediaInteractorOutput {
     var interactor: SearchMediaInteractorInput!
     var router: SearchMediaRouterInput!
     
+    func viewIsReady() {
+        view.prepareTableView()
+        view.prepareSearchController()
+    }
+    
+    func OnViewDidAppear() {
+        view.reloadTableView()
+    }
+    
+    func getMedia(by text: String) {
+        interactor.getSearchResult(with: text)
+    }
+    
+    func didFinishingLoadSearchMediaResult(with result: [SearchMediaCellModel]) {
+        view.set(cellModels: result)
+        view.reloadTableView()
+    }
+    
 }
+

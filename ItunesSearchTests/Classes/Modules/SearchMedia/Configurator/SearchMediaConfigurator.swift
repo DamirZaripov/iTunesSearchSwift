@@ -14,13 +14,19 @@ class SearchMediaConfigurator {
         let presenter = SearchMediaPresenter()
         let interactor = SearchMediaInteractor()
         let router = SearchMediaRouter()
+        let searchMediaDataSource = SearchMediaDataSource()
+        let apiManager = ApiManagerImpl()
+        let userDefaultManager = UserDefaultsManagerImpl()
         
         view.presenter = presenter
+        view.searchMediaDataSource = searchMediaDataSource
         
         presenter.interactor = interactor
         presenter.router = router
         presenter.view = view
         
         interactor.presenter = presenter
+        interactor.apiManager = apiManager
+        interactor.userDefaultManager = userDefaultManager
     }
 }

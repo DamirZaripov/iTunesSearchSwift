@@ -16,4 +16,6 @@ class SearchMediaInitializer: NSObject {
         let configurator = SearchMediaConfigurator()
         configurator.setupModule(with: view)
     }
+    
+    
 }

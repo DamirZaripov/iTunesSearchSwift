@@ -10,4 +10,9 @@ import Foundation
 
 protocol SearchMediaViewInput: class {
     
+    func prepareTableView()
+    func prepareSearchController()
+    func set(cellModels: [SearchMediaCellModel])
+    func reloadTableView()
+    func clearDataSource()
 }

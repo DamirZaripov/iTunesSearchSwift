@@ -10,7 +10,5 @@ import Foundation
 
 protocol SettingsViewOutput: class {
     
-    func viewIsReady()
-    
     func didSelectSettingsRow(at indexPath: IndexPath)
 }

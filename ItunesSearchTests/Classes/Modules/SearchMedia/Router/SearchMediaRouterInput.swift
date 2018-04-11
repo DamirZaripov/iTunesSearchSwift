@@ -10,5 +10,8 @@ import Foundation
 
 protocol SearchMediaRouterInput: class {
     
+    /// Show page in Safari
+    ///
+    /// - Parameter url: page url
     func showPage(with url: URL)
 }

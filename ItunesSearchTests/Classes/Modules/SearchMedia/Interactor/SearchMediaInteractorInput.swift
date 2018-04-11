@@ -10,6 +10,9 @@ import Foundation
 
 protocol SearchMediaInteractorInput: class {
     
+    /// Get search result
+    ///
+    /// - Parameter term: search text
     func getSearchResult(with term: String)
     
 }

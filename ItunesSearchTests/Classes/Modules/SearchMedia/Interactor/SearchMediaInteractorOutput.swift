@@ -10,6 +10,9 @@ import Foundation
 
 protocol SearchMediaInteractorOutput: class {
  
+    /// Finishing search
+    ///
+    /// - Parameter result: result
     func didFinishingLoadSearchMediaResult(with result: [SearchMediaCellModel])
     
 }

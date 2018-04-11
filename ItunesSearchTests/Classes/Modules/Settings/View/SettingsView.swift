@@ -14,13 +14,8 @@ class SettingsView: UITableViewController, SettingsViewInput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.viewIsReady()
     }
-    
-    func prepareTableView() {
-        tableView.delegate = self
-    }
-    
+
 }
 
 extension SettingsView {

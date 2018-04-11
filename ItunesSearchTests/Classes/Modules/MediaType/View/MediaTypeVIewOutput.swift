@@ -10,16 +10,26 @@ import Foundation
 
 protocol MediaTypeViewOutput: class {
     
+    /// View preparation
     func viewIsReady()
     
+    /// View will appear
     func onViewWillAppear()
     
+    /// Get number of components
     func getNumberOfComponents()
     
+    /// Get number of rows in components
     func getNumberOfRowsInComponent()
     
+    /// Get title for row
+    ///
+    /// - Parameter index: index
     func getTitleForRow(index: Int)
     
+    /// Select media type
+    ///
+    /// - Parameter index: index
     func didSelectMediaType(at index: Int)
     
 }

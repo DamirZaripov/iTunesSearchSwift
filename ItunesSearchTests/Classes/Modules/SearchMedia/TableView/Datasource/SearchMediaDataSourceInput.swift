@@ -12,7 +12,12 @@ protocol SearchMediaDataSourceInput: UITableViewDelegate, UITableViewDataSource 
     
     var cellPressedDelegate: CellPressedDelegate? { get set }
     
+    /// Updating the array
+    ///
+    /// - Parameter models: result
     func setCellModels(with models: [SearchMediaCellModel])
+    
+    /// Clear array of models
     func clearTableView()
     
 }

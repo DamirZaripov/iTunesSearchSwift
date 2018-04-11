@@ -13,5 +13,13 @@ protocol APIManager: class {
     var baseURL: String { get }
     var endURL: String { get }
     
+    /// Request to receive data
+    ///
+    /// - Parameters:
+    ///   - term: saerch term
+    ///   - limit: search limit
+    ///   - mediaType: search by media
+    ///   - deviceType: searh by device
+    ///   - completionBlock: result
     func getMedia(term: String, limit: String, mediaType: String, deviceType: String, completionBlock: @escaping (SearchMediaResult) -> ())
 }

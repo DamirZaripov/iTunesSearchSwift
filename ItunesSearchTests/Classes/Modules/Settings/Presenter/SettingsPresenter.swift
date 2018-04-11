@@ -19,10 +19,6 @@ class SettingsPresenter: SettingsViewOutput, SettingsInteractorOutput {
     
     //MARK: - Settings view output
     
-    func viewIsReady() {
-        view.prepareTableView()
-    }
-    
     func didSelectSettingsRow(at indexPath: IndexPath) {
         let index = indexPath.row
         if (index == amountOfObjectsIndex) {

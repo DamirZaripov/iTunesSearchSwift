@@ -10,6 +10,9 @@ import Foundation
 
 protocol CellPressedDelegate {
     
+    /// Show page
+    ///
+    /// - Parameter url: page url
     func showPage(with url: URL)
     
 }

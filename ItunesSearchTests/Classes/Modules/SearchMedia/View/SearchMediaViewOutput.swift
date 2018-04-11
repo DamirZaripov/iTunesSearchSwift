@@ -10,8 +10,15 @@ import Foundation
 
 protocol SearchMediaViewOutput: class {
     
+    /// View preparation
     func viewIsReady()
+    
+    /// Media get
+    ///
+    /// - Parameter text: media title
     func getMedia(by text: String)
+    
+    /// Then called viewDidApper in View
     func OnViewDidAppear()
     
 }

@@ -10,7 +10,10 @@ import Foundation
 
 protocol SettingsRouterInput: class {
     
+    /// Show Media Type Screen
     func showMediaTypeScreen()
+    
+    /// Show Amount Of Objcets Screen
     func showAmountOfObiectsScreen()
     
 }

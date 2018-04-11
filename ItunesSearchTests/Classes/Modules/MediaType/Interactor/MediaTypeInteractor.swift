@@ -13,6 +13,7 @@ class MediaTypeInteractor: MediaTypeInteractorInput {
     weak var presenter: MediaTypeInteractorOutput!
     var userDefaultsManager: UserDefaultsManager!
     var mediaTypesArray = [String]()
+    let numberOfComponents = 1
     
     func prepareDate() {
         let mediaTypesArray = MediaTypes.allValues
@@ -25,6 +26,10 @@ class MediaTypeInteractor: MediaTypeInteractorInput {
         let mediaTypeTitle = mediaTypesArray[index]
         guard let mediaType = MediaTypes(rawValue: mediaTypeTitle) else { return }
         userDefaultsManager.save(mediaType: mediaType)
+    }
+    
+    func getNumberOfComponents() {
+        presenter.didFinishingGetNumberOfComponents(with: numberOfComponents)
     }
     
     func getNumberOfRows() {

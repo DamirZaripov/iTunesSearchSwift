@@ -7,25 +7,223 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260EA09BCA96827E559A50AD /* Pods_ItunesSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DF913B58C171B67FED821 /* Pods_ItunesSearchTests.framework */; };
 		7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD585820761C0E00AD3566 /* AppDelegate.swift */; };
-		7CCD585B20761C0E00AD3566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD585A20761C0E00AD3566 /* ViewController.swift */; };
 		7CCD585E20761C0E00AD3566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585C20761C0E00AD3566 /* Main.storyboard */; };
 		7CCD586020761C1000AD3566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD585F20761C1000AD3566 /* Assets.xcassets */; };
 		7CCD586320761C1000AD3566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD586120761C1000AD3566 /* LaunchScreen.storyboard */; };
+		FF052E9A207A1C2F001C1A0F /* MediaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052E99207A1C2F001C1A0F /* MediaTypes.swift */; };
+		FF052E9D207A1D8A001C1A0F /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052E9C207A1D8A001C1A0F /* UserDefaultsManager.swift */; };
+		FF052E9F207A1E99001C1A0F /* SearchByDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052E9E207A1E99001C1A0F /* SearchByDevice.swift */; };
+		FF052EA1207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA0207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift */; };
+		FF052EA4207A2893001C1A0F /* AmountOfObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA3207A2893001C1A0F /* AmountOfObjectsView.swift */; };
+		FF052EA6207A28B0001C1A0F /* AmountOfObjectsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA5207A28B0001C1A0F /* AmountOfObjectsViewInput.swift */; };
+		FF052EA8207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA7207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift */; };
+		FF052EAA207A2B33001C1A0F /* AmountOfObjectsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EA9207A2B33001C1A0F /* AmountOfObjectsPresenter.swift */; };
+		FF052EAC207A2B50001C1A0F /* AmountOfObjectsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EAB207A2B50001C1A0F /* AmountOfObjectsInteractor.swift */; };
+		FF052EB0207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EAF207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift */; };
+		FF052EB2207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB1207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift */; };
+		FF052EB4207A2C16001C1A0F /* AmountOfObjectsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB3207A2C16001C1A0F /* AmountOfObjectsRouter.swift */; };
+		FF052EB6207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB5207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift */; };
+		FF052EB8207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB7207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift */; };
+		FF052EBA207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF052EB9207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift */; };
+		FF07C104207C29DA008AC5AC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C102207C29DA008AC5AC /* APIManager.swift */; };
+		FF07C105207C29DA008AC5AC /* ApiManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C103207C29DA008AC5AC /* ApiManagerImpl.swift */; };
+		FF07C10C207C29F9008AC5AC /* SearchMediaCellModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C108207C29F9008AC5AC /* SearchMediaCellModelImpl.swift */; };
+		FF07C10D207C29F9008AC5AC /* SearchMediaCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C109207C29F9008AC5AC /* SearchMediaCellModel.swift */; };
+		FF07C10E207C29F9008AC5AC /* SearchMediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C10B207C29F9008AC5AC /* SearchMediaResult.swift */; };
+		FF07C114207C2C52008AC5AC /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C112207C2C52008AC5AC /* MediaTableViewCell.swift */; };
+		FF07C115207C2C52008AC5AC /* MediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF07C113207C2C52008AC5AC /* MediaTableViewCell.xib */; };
+		FF07C117207C2D05008AC5AC /* SearchMediaDataSourceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C116207C2D05008AC5AC /* SearchMediaDataSourceInput.swift */; };
+		FF07C119207C2D72008AC5AC /* SearchMediaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C118207C2D72008AC5AC /* SearchMediaDataSource.swift */; };
+		FF07C11E207D7389008AC5AC /* CellPressedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C11D207D7389008AC5AC /* CellPressedDelegate.swift */; };
+		FF07C12F207D8178008AC5AC /* SettingsViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C12E207D8178008AC5AC /* SettingsViewTest.swift */; };
+		FF07C132207D8D93008AC5AC /* SettingsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C131207D8D93008AC5AC /* SettingsPresenterTest.swift */; };
+		FF07C137207E0713008AC5AC /* SettingsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C136207E0713008AC5AC /* SettingsPresenterMock.swift */; };
+		FF07C13A207E07EE008AC5AC /* SettingsRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C139207E07EE008AC5AC /* SettingsRouterMock.swift */; };
+		FF07C13C207E0F03008AC5AC /* SettingsRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C13B207E0F03008AC5AC /* SettingsRouterTest.swift */; };
+		FF07C143207E1AB7008AC5AC /* MediaTypeViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C142207E1AB7008AC5AC /* MediaTypeViewTest.swift */; };
+		FF07C145207E1AC5008AC5AC /* MediaTypePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C144207E1AC5008AC5AC /* MediaTypePresenterTest.swift */; };
+		FF07C147207E1B90008AC5AC /* MediaTypePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C146207E1B90008AC5AC /* MediaTypePresenterMock.swift */; };
+		FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E4F207977E00081F33F /* Storyboards.swift */; };
+		FF6C2E52207979750081F33F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E51207979750081F33F /* ReusableView.swift */; };
+		FF6C2E5720797BB50081F33F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5620797BB50081F33F /* Result.swift */; };
+		FF6C2E5920797BBF0081F33F /* ArrayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5820797BBF0081F33F /* ArrayResult.swift */; };
+		FF6C2E5B2079830A0081F33F /* CommonAlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5A2079830A0081F33F /* CommonAlertsFactory.swift */; };
+		FF6C2E5D207983EA0081F33F /* CommonAlertsFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5C207983EA0081F33F /* CommonAlertsFactoryImpl.swift */; };
+		FF6C2E5F2079854E0081F33F /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5E2079854E0081F33F /* ModuleInput.swift */; };
+		FF6C2E612079856D0081F33F /* ModuleInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E602079856D0081F33F /* ModuleInputHandler.swift */; };
+		FF6C2E6A207988980081F33F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E69207988980081F33F /* SettingsView.swift */; };
+		FF6C2E6C207989E10081F33F /* SettingsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E6B207989E10081F33F /* SettingsViewInput.swift */; };
+		FF6C2E6E207989F30081F33F /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E6D207989F30081F33F /* SettingsViewOutput.swift */; };
+		FF6C2E7020798B0A0081F33F /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E6F20798B0A0081F33F /* SettingsPresenter.swift */; };
+		FF6C2E7220798B180081F33F /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7120798B180081F33F /* SettingsInteractor.swift */; };
+		FF6C2E7420798B280081F33F /* SettingsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7320798B280081F33F /* SettingsInteractorInput.swift */; };
+		FF6C2E7620798B390081F33F /* SettingsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7520798B390081F33F /* SettingsInteractorOutput.swift */; };
+		FF6C2E79207995030081F33F /* SettingsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E78207995030081F33F /* SettingsRouterInput.swift */; };
+		FF6C2E7B207995120081F33F /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7A207995120081F33F /* SettingsRouter.swift */; };
+		FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7C207995C70081F33F /* SettingsInitializer.swift */; };
+		FF6C2E7F207995E30081F33F /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E7E207995E30081F33F /* SettingsConfigurator.swift */; };
+		FF9FE8D1207C286D007316C1 /* SearchMediaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C2207C286D007316C1 /* SearchMediaPresenter.swift */; };
+		FF9FE8D2207C286D007316C1 /* SearchMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C4207C286D007316C1 /* SearchMediaViewInput.swift */; };
+		FF9FE8D3207C286D007316C1 /* SearchMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C5207C286D007316C1 /* SearchMediaView.swift */; };
+		FF9FE8D4207C286D007316C1 /* SearchMediaViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C6207C286D007316C1 /* SearchMediaViewOutput.swift */; };
+		FF9FE8D5207C286D007316C1 /* SearchMediaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C8207C286D007316C1 /* SearchMediaConfigurator.swift */; };
+		FF9FE8D6207C286D007316C1 /* SearchMediaInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8C9207C286D007316C1 /* SearchMediaInitializer.swift */; };
+		FF9FE8D7207C286D007316C1 /* SearchMediaInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8CB207C286D007316C1 /* SearchMediaInteractorInput.swift */; };
+		FF9FE8D8207C286D007316C1 /* SearchMediaInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8CC207C286D007316C1 /* SearchMediaInteractorOutput.swift */; };
+		FF9FE8D9207C286D007316C1 /* SearchMediaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8CD207C286D007316C1 /* SearchMediaInteractor.swift */; };
+		FF9FE8DA207C286D007316C1 /* SearchMediaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8CF207C286D007316C1 /* SearchMediaRouter.swift */; };
+		FF9FE8DB207C286D007316C1 /* SearchMediaRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FE8D0207C286D007316C1 /* SearchMediaRouterInput.swift */; };
+		FFB7C5A2207E96D3008B389C /* MediaTypeInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7C5A1207E96D3008B389C /* MediaTypeInteractorMock.swift */; };
+		FFB7C5A4207E96DF008B389C /* MediaTypeInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7C5A3207E96DF008B389C /* MediaTypeInteractorTest.swift */; };
+		FFB7C5A6207EA05C008B389C /* MediaTypeViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7C5A5207EA05C008B389C /* MediaTypeViewMock.swift */; };
+		FFB7C5AA207EA350008B389C /* UserDefaultsManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7C5A9207EA350008B389C /* UserDefaultsManagerMock.swift */; };
+		FFB7C5B2207EAAA9008B389C /* ItunesSearchTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7C5B1207EAAA9008B389C /* ItunesSearchTestsUITests.swift */; };
+		FFDCFBC9207A5DC400F50FB7 /* EnumPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */; };
+		FFDCFBCB207A7DB100F50FB7 /* MediaTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBCA207A7DB100F50FB7 /* MediaTypeView.swift */; };
+		FFDCFBCD207A7DBD00F50FB7 /* MediaTypeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBCC207A7DBD00F50FB7 /* MediaTypeViewInput.swift */; };
+		FFDCFBCF207A7DC500F50FB7 /* MediaTypeVIewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBCE207A7DC500F50FB7 /* MediaTypeVIewOutput.swift */; };
+		FFDCFBD1207A847A00F50FB7 /* MediaTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD0207A847A00F50FB7 /* MediaTypePresenter.swift */; };
+		FFDCFBD3207A84AC00F50FB7 /* MediaTypeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD2207A84AC00F50FB7 /* MediaTypeInteractor.swift */; };
+		FFDCFBD5207A84BC00F50FB7 /* MediaTypeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD4207A84BC00F50FB7 /* MediaTypeInteractorInput.swift */; };
+		FFDCFBD7207A84C500F50FB7 /* MediaTypeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD6207A84C500F50FB7 /* MediaTypeInteractorOutput.swift */; };
+		FFDCFBD9207A856A00F50FB7 /* MediaTypeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBD8207A856A00F50FB7 /* MediaTypeRouter.swift */; };
+		FFDCFBDB207A857900F50FB7 /* MediaTypeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBDA207A857900F50FB7 /* MediaTypeRouterInput.swift */; };
+		FFDCFBDD207A860500F50FB7 /* MediaTypeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBDC207A860500F50FB7 /* MediaTypeConfigurator.swift */; };
+		FFDCFBDF207A861E00F50FB7 /* MediaTypeInitailizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFBDE207A861E00F50FB7 /* MediaTypeInitailizer.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FF07C128207D7E53008AC5AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CCD584D20761C0E00AD3566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CCD585420761C0E00AD3566;
+			remoteInfo = ItunesSearchTests;
+		};
+		FFB7C5B4207EAAA9008B389C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CCD584D20761C0E00AD3566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CCD585420761C0E00AD3566;
+			remoteInfo = ItunesSearchTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1FD9751C885D68E6BB0F2761 /* Pods-ItunesSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72029CFFA1847498806AC4C7 /* Pods-ItunesSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		7CCD585520761C0E00AD3566 /* ItunesSearchTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSearchTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCD585820761C0E00AD3566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CCD585A20761C0E00AD3566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CCD585D20761C0E00AD3566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CCD585F20761C1000AD3566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CCD586220761C1000AD3566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CCD586420761C1000AD3566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97DF913B58C171B67FED821 /* Pods_ItunesSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF052E99207A1C2F001C1A0F /* MediaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypes.swift; sourceTree = "<group>"; };
+		FF052E9C207A1D8A001C1A0F /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		FF052E9E207A1E99001C1A0F /* SearchByDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByDevice.swift; sourceTree = "<group>"; };
+		FF052EA0207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagerImpl.swift; sourceTree = "<group>"; };
+		FF052EA3207A2893001C1A0F /* AmountOfObjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsView.swift; sourceTree = "<group>"; };
+		FF052EA5207A28B0001C1A0F /* AmountOfObjectsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsViewInput.swift; sourceTree = "<group>"; };
+		FF052EA7207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsViewOutput.swift; sourceTree = "<group>"; };
+		FF052EA9207A2B33001C1A0F /* AmountOfObjectsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsPresenter.swift; sourceTree = "<group>"; };
+		FF052EAB207A2B50001C1A0F /* AmountOfObjectsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsInteractor.swift; sourceTree = "<group>"; };
+		FF052EAF207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsInteractorInput.swift; sourceTree = "<group>"; };
+		FF052EB1207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsInteractorOutput.swift; sourceTree = "<group>"; };
+		FF052EB3207A2C16001C1A0F /* AmountOfObjectsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsRouter.swift; sourceTree = "<group>"; };
+		FF052EB5207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsRouterInput.swift; sourceTree = "<group>"; };
+		FF052EB7207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsConfigurator.swift; sourceTree = "<group>"; };
+		FF052EB9207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfObjectsInitializer.swift; sourceTree = "<group>"; };
+		FF07C102207C29DA008AC5AC /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FF07C103207C29DA008AC5AC /* ApiManagerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManagerImpl.swift; sourceTree = "<group>"; };
+		FF07C108207C29F9008AC5AC /* SearchMediaCellModelImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaCellModelImpl.swift; sourceTree = "<group>"; };
+		FF07C109207C29F9008AC5AC /* SearchMediaCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaCellModel.swift; sourceTree = "<group>"; };
+		FF07C10B207C29F9008AC5AC /* SearchMediaResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaResult.swift; sourceTree = "<group>"; };
+		FF07C112207C2C52008AC5AC /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
+		FF07C113207C2C52008AC5AC /* MediaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaTableViewCell.xib; sourceTree = "<group>"; };
+		FF07C116207C2D05008AC5AC /* SearchMediaDataSourceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDataSourceInput.swift; sourceTree = "<group>"; };
+		FF07C118207C2D72008AC5AC /* SearchMediaDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDataSource.swift; sourceTree = "<group>"; };
+		FF07C11D207D7389008AC5AC /* CellPressedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPressedDelegate.swift; sourceTree = "<group>"; };
+		FF07C123207D7E53008AC5AC /* ItunesSearchTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesSearchTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF07C127207D7E53008AC5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF07C12E207D8178008AC5AC /* SettingsViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTest.swift; sourceTree = "<group>"; };
+		FF07C131207D8D93008AC5AC /* SettingsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTest.swift; sourceTree = "<group>"; };
+		FF07C136207E0713008AC5AC /* SettingsPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterMock.swift; sourceTree = "<group>"; };
+		FF07C139207E07EE008AC5AC /* SettingsRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouterMock.swift; sourceTree = "<group>"; };
+		FF07C13B207E0F03008AC5AC /* SettingsRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouterTest.swift; sourceTree = "<group>"; };
+		FF07C142207E1AB7008AC5AC /* MediaTypeViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeViewTest.swift; sourceTree = "<group>"; };
+		FF07C144207E1AC5008AC5AC /* MediaTypePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypePresenterTest.swift; sourceTree = "<group>"; };
+		FF07C146207E1B90008AC5AC /* MediaTypePresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypePresenterMock.swift; sourceTree = "<group>"; };
+		FF6C2E4F207977E00081F33F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		FF6C2E51207979750081F33F /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		FF6C2E5620797BB50081F33F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		FF6C2E5820797BBF0081F33F /* ArrayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayResult.swift; sourceTree = "<group>"; };
+		FF6C2E5A2079830A0081F33F /* CommonAlertsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactory.swift; sourceTree = "<group>"; };
+		FF6C2E5C207983EA0081F33F /* CommonAlertsFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlertsFactoryImpl.swift; sourceTree = "<group>"; };
+		FF6C2E5E2079854E0081F33F /* ModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
+		FF6C2E602079856D0081F33F /* ModuleInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInputHandler.swift; sourceTree = "<group>"; };
+		FF6C2E69207988980081F33F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FF6C2E6B207989E10081F33F /* SettingsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewInput.swift; sourceTree = "<group>"; };
+		FF6C2E6D207989F30081F33F /* SettingsViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewOutput.swift; sourceTree = "<group>"; };
+		FF6C2E6F20798B0A0081F33F /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		FF6C2E7120798B180081F33F /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		FF6C2E7320798B280081F33F /* SettingsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractorInput.swift; sourceTree = "<group>"; };
+		FF6C2E7520798B390081F33F /* SettingsInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractorOutput.swift; sourceTree = "<group>"; };
+		FF6C2E78207995030081F33F /* SettingsRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouterInput.swift; sourceTree = "<group>"; };
+		FF6C2E7A207995120081F33F /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		FF6C2E7C207995C70081F33F /* SettingsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInitializer.swift; sourceTree = "<group>"; };
+		FF6C2E7E207995E30081F33F /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		FF9FE8C2207C286D007316C1 /* SearchMediaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaPresenter.swift; sourceTree = "<group>"; };
+		FF9FE8C4207C286D007316C1 /* SearchMediaViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaViewInput.swift; sourceTree = "<group>"; };
+		FF9FE8C5207C286D007316C1 /* SearchMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaView.swift; sourceTree = "<group>"; };
+		FF9FE8C6207C286D007316C1 /* SearchMediaViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaViewOutput.swift; sourceTree = "<group>"; };
+		FF9FE8C8207C286D007316C1 /* SearchMediaConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaConfigurator.swift; sourceTree = "<group>"; };
+		FF9FE8C9207C286D007316C1 /* SearchMediaInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInitializer.swift; sourceTree = "<group>"; };
+		FF9FE8CB207C286D007316C1 /* SearchMediaInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorInput.swift; sourceTree = "<group>"; };
+		FF9FE8CC207C286D007316C1 /* SearchMediaInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorOutput.swift; sourceTree = "<group>"; };
+		FF9FE8CD207C286D007316C1 /* SearchMediaInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractor.swift; sourceTree = "<group>"; };
+		FF9FE8CF207C286D007316C1 /* SearchMediaRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaRouter.swift; sourceTree = "<group>"; };
+		FF9FE8D0207C286D007316C1 /* SearchMediaRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaRouterInput.swift; sourceTree = "<group>"; };
+		FFB7C5A1207E96D3008B389C /* MediaTypeInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractorMock.swift; sourceTree = "<group>"; };
+		FFB7C5A3207E96DF008B389C /* MediaTypeInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractorTest.swift; sourceTree = "<group>"; };
+		FFB7C5A5207EA05C008B389C /* MediaTypeViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeViewMock.swift; sourceTree = "<group>"; };
+		FFB7C5A9207EA350008B389C /* UserDefaultsManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagerMock.swift; sourceTree = "<group>"; };
+		FFB7C5AF207EAAA9008B389C /* ItunesSearchTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesSearchTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB7C5B1207EAAA9008B389C /* ItunesSearchTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchTestsUITests.swift; sourceTree = "<group>"; };
+		FFB7C5B3207EAAA9008B389C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumPickerView.swift; sourceTree = "<group>"; };
+		FFDCFBCA207A7DB100F50FB7 /* MediaTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeView.swift; sourceTree = "<group>"; };
+		FFDCFBCC207A7DBD00F50FB7 /* MediaTypeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeViewInput.swift; sourceTree = "<group>"; };
+		FFDCFBCE207A7DC500F50FB7 /* MediaTypeVIewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeVIewOutput.swift; sourceTree = "<group>"; };
+		FFDCFBD0207A847A00F50FB7 /* MediaTypePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypePresenter.swift; sourceTree = "<group>"; };
+		FFDCFBD2207A84AC00F50FB7 /* MediaTypeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractor.swift; sourceTree = "<group>"; };
+		FFDCFBD4207A84BC00F50FB7 /* MediaTypeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractorInput.swift; sourceTree = "<group>"; };
+		FFDCFBD6207A84C500F50FB7 /* MediaTypeInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInteractorOutput.swift; sourceTree = "<group>"; };
+		FFDCFBD8207A856A00F50FB7 /* MediaTypeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeRouter.swift; sourceTree = "<group>"; };
+		FFDCFBDA207A857900F50FB7 /* MediaTypeRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeRouterInput.swift; sourceTree = "<group>"; };
+		FFDCFBDC207A860500F50FB7 /* MediaTypeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeConfigurator.swift; sourceTree = "<group>"; };
+		FFDCFBDE207A861E00F50FB7 /* MediaTypeInitailizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeInitailizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7CCD585220761C0E00AD3566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260EA09BCA96827E559A50AD /* Pods_ItunesSearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF07C120207D7E53008AC5AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB7C5AC207EAAA9008B389C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,11 +233,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160416A3E3B3D0ECC5B9AED3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9751C885D68E6BB0F2761 /* Pods-ItunesSearchTests.debug.xcconfig */,
+				72029CFFA1847498806AC4C7 /* Pods-ItunesSearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7CCD584C20761C0E00AD3566 = {
 			isa = PBXGroup;
 			children = (
 				7CCD585720761C0E00AD3566 /* ItunesSearchTests */,
+				FF07C124207D7E53008AC5AC /* ItunesSearchTestsTests */,
+				FFB7C5B0207EAAA9008B389C /* ItunesSearchTestsUITests */,
 				7CCD585620761C0E00AD3566 /* Products */,
+				160416A3E3B3D0ECC5B9AED3 /* Pods */,
+				B60618C6261D1F69A1FC98B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				7CCD585520761C0E00AD3566 /* ItunesSearchTests.app */,
+				FF07C123207D7E53008AC5AC /* ItunesSearchTestsTests.xctest */,
+				FFB7C5AF207EAAA9008B389C /* ItunesSearchTestsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +267,581 @@
 		7CCD585720761C0E00AD3566 /* ItunesSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				FF6C2E49207960F40081F33F /* Classes */,
+				FF6C2E48207960E10081F33F /* Resources */,
+			);
+			path = ItunesSearchTests;
+			sourceTree = "<group>";
+		};
+		B60618C6261D1F69A1FC98B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B97DF913B58C171B67FED821 /* Pods_ItunesSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF052E8B207A1B17001C1A0F /* MediaType */ = {
+			isa = PBXGroup;
+			children = (
+				FF052E91207A1B6A001C1A0F /* Configurator */,
+				FF052E90207A1B63001C1A0F /* Entity */,
+				FF052E8F207A1B5D001C1A0F /* Router */,
+				FF052E8E207A1B55001C1A0F /* Interactor */,
+				FF052E8D207A1B4E001C1A0F /* Presenter */,
+				FF052E8C207A1B49001C1A0F /* View */,
+			);
+			path = MediaType;
+			sourceTree = "<group>";
+		};
+		FF052E8C207A1B49001C1A0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFDCFBCA207A7DB100F50FB7 /* MediaTypeView.swift */,
+				FFDCFBCC207A7DBD00F50FB7 /* MediaTypeViewInput.swift */,
+				FFDCFBCE207A7DC500F50FB7 /* MediaTypeVIewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF052E8D207A1B4E001C1A0F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FFDCFBD0207A847A00F50FB7 /* MediaTypePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FF052E8E207A1B55001C1A0F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FFDCFBD2207A84AC00F50FB7 /* MediaTypeInteractor.swift */,
+				FFDCFBD4207A84BC00F50FB7 /* MediaTypeInteractorInput.swift */,
+				FFDCFBD6207A84C500F50FB7 /* MediaTypeInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FF052E8F207A1B5D001C1A0F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FFDCFBD8207A856A00F50FB7 /* MediaTypeRouter.swift */,
+				FFDCFBDA207A857900F50FB7 /* MediaTypeRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FF052E90207A1B63001C1A0F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FF052E99207A1C2F001C1A0F /* MediaTypes.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF052E91207A1B6A001C1A0F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FFDCFBDC207A860500F50FB7 /* MediaTypeConfigurator.swift */,
+				FFDCFBDE207A861E00F50FB7 /* MediaTypeInitailizer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FF052E92207A1B75001C1A0F /* AmountOfObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FF052E98207A1BD2001C1A0F /* Configurator */,
+				FF052E97207A1BCB001C1A0F /* Entity */,
+				FF052E96207A1BC7001C1A0F /* Router */,
+				FF052E95207A1BC0001C1A0F /* Interactor */,
+				FF052E94207A1BB9001C1A0F /* Presenter */,
+				FF052E93207A1BB5001C1A0F /* View */,
+			);
+			path = AmountOfObjects;
+			sourceTree = "<group>";
+		};
+		FF052E93207A1BB5001C1A0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF052EA3207A2893001C1A0F /* AmountOfObjectsView.swift */,
+				FF052EA5207A28B0001C1A0F /* AmountOfObjectsViewInput.swift */,
+				FF052EA7207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF052E94207A1BB9001C1A0F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF052EA9207A2B33001C1A0F /* AmountOfObjectsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FF052E95207A1BC0001C1A0F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FF052EAB207A2B50001C1A0F /* AmountOfObjectsInteractor.swift */,
+				FF052EAF207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift */,
+				FF052EB1207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FF052E96207A1BC7001C1A0F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FF052EB3207A2C16001C1A0F /* AmountOfObjectsRouter.swift */,
+				FF052EB5207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FF052E97207A1BCB001C1A0F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FF052E9E207A1E99001C1A0F /* SearchByDevice.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF052E98207A1BD2001C1A0F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FF052EB7207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift */,
+				FF052EB9207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FF052E9B207A1D3A001C1A0F /* UserDefalutsManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF052E9C207A1D8A001C1A0F /* UserDefaultsManager.swift */,
+				FF052EA0207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift */,
+			);
+			path = UserDefalutsManager;
+			sourceTree = "<group>";
+		};
+		FF07C101207C29DA008AC5AC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C102207C29DA008AC5AC /* APIManager.swift */,
+				FF07C103207C29DA008AC5AC /* ApiManagerImpl.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FF07C106207C29F9008AC5AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C107207C29F9008AC5AC /* CellModel */,
+				FF07C10A207C29F9008AC5AC /* APIModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF07C107207C29F9008AC5AC /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C108207C29F9008AC5AC /* SearchMediaCellModelImpl.swift */,
+				FF07C109207C29F9008AC5AC /* SearchMediaCellModel.swift */,
+			);
+			path = CellModel;
+			sourceTree = "<group>";
+		};
+		FF07C10A207C29F9008AC5AC /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C10B207C29F9008AC5AC /* SearchMediaResult.swift */,
+			);
+			path = APIModel;
+			sourceTree = "<group>";
+		};
+		FF07C10F207C2C01008AC5AC /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C111207C2C1E008AC5AC /* TableViewCell */,
+				FF07C110207C2C17008AC5AC /* Datasource */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FF07C110207C2C17008AC5AC /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C116207C2D05008AC5AC /* SearchMediaDataSourceInput.swift */,
+				FF07C118207C2D72008AC5AC /* SearchMediaDataSource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		FF07C111207C2C1E008AC5AC /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C112207C2C52008AC5AC /* MediaTableViewCell.swift */,
+				FF07C113207C2C52008AC5AC /* MediaTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		FF07C11C207D735B008AC5AC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C11D207D7389008AC5AC /* CellPressedDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FF07C124207D7E53008AC5AC /* ItunesSearchTestsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB7C5A7207EA2B7008B389C /* ManagerTest */,
+				FF07C13D207E1481008AC5AC /* MediaTypeTest */,
+				FF07C12D207D8146008AC5AC /* SettingsTest */,
+				FF07C127207D7E53008AC5AC /* Info.plist */,
+			);
+			path = ItunesSearchTestsTests;
+			sourceTree = "<group>";
+		};
+		FF07C12D207D8146008AC5AC /* SettingsTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C138207E07D5008AC5AC /* SettingsRouterTest */,
+				FF07C135207E0703008AC5AC /* SettingsPresenterTest */,
+				FF07C134207E0591008AC5AC /* SettingsViewTest */,
+			);
+			path = SettingsTest;
+			sourceTree = "<group>";
+		};
+		FF07C134207E0591008AC5AC /* SettingsViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C12E207D8178008AC5AC /* SettingsViewTest.swift */,
+			);
+			path = SettingsViewTest;
+			sourceTree = "<group>";
+		};
+		FF07C135207E0703008AC5AC /* SettingsPresenterTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C131207D8D93008AC5AC /* SettingsPresenterTest.swift */,
+				FF07C136207E0713008AC5AC /* SettingsPresenterMock.swift */,
+			);
+			path = SettingsPresenterTest;
+			sourceTree = "<group>";
+		};
+		FF07C138207E07D5008AC5AC /* SettingsRouterTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C139207E07EE008AC5AC /* SettingsRouterMock.swift */,
+				FF07C13B207E0F03008AC5AC /* SettingsRouterTest.swift */,
+			);
+			path = SettingsRouterTest;
+			sourceTree = "<group>";
+		};
+		FF07C13D207E1481008AC5AC /* MediaTypeTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C141207E14CA008AC5AC /* MediaTypeInteractorTest */,
+				FF07C140207E14C3008AC5AC /* MediaTypeRouterTest */,
+				FF07C13F207E14B8008AC5AC /* MediaTypePresenterTest */,
+				FF07C13E207E14AB008AC5AC /* MediaTypeViewTest */,
+			);
+			path = MediaTypeTest;
+			sourceTree = "<group>";
+		};
+		FF07C13E207E14AB008AC5AC /* MediaTypeViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C142207E1AB7008AC5AC /* MediaTypeViewTest.swift */,
+				FFB7C5A5207EA05C008B389C /* MediaTypeViewMock.swift */,
+			);
+			path = MediaTypeViewTest;
+			sourceTree = "<group>";
+		};
+		FF07C13F207E14B8008AC5AC /* MediaTypePresenterTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C144207E1AC5008AC5AC /* MediaTypePresenterTest.swift */,
+				FF07C146207E1B90008AC5AC /* MediaTypePresenterMock.swift */,
+			);
+			path = MediaTypePresenterTest;
+			sourceTree = "<group>";
+		};
+		FF07C140207E14C3008AC5AC /* MediaTypeRouterTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MediaTypeRouterTest;
+			sourceTree = "<group>";
+		};
+		FF07C141207E14CA008AC5AC /* MediaTypeInteractorTest */ = {
+			isa = PBXGroup;
+			children = (
+				FFB7C5A1207E96D3008B389C /* MediaTypeInteractorMock.swift */,
+				FFB7C5A3207E96DF008B389C /* MediaTypeInteractorTest.swift */,
+			);
+			path = MediaTypeInteractorTest;
+			sourceTree = "<group>";
+		};
+		FF6C2E48207960E10081F33F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7CCD585820761C0E00AD3566 /* AppDelegate.swift */,
-				7CCD585A20761C0E00AD3566 /* ViewController.swift */,
 				7CCD585C20761C0E00AD3566 /* Main.storyboard */,
 				7CCD585F20761C1000AD3566 /* Assets.xcassets */,
 				7CCD586120761C1000AD3566 /* LaunchScreen.storyboard */,
 				7CCD586420761C1000AD3566 /* Info.plist */,
 			);
-			path = ItunesSearchTests;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF6C2E49207960F40081F33F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E4C207977200081F33F /* Modules */,
+				FF6C2E4B2079771A0081F33F /* Managers */,
+				FF6C2E4A207961310081F33F /* Helpers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FF6C2E4A207961310081F33F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C11C207D735B008AC5AC /* Delegates */,
+				FF07C106207C29F9008AC5AC /* Models */,
+				FFDCFBC7207A5DAC00F50FB7 /* EnumPickerView */,
+				FF6C2E5520797B910081F33F /* AlertsFactory */,
+				FF6C2E5420797B860081F33F /* EnumResult */,
+				FF6C2E5320797B6E0081F33F /* ModuleInput */,
+				FF6C2E4E207977CB0081F33F /* Storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FF6C2E4B2079771A0081F33F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C101207C29DA008AC5AC /* API */,
+				FF052E9B207A1D3A001C1A0F /* UserDefalutsManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FF6C2E4C207977200081F33F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8BF207C286D007316C1 /* SearchMedia */,
+				FF052E92207A1B75001C1A0F /* AmountOfObjects */,
+				FF052E8B207A1B17001C1A0F /* MediaType */,
+				FF6C2E622079884E0081F33F /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FF6C2E4E207977CB0081F33F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E4F207977E00081F33F /* Storyboards.swift */,
+				FF6C2E51207979750081F33F /* ReusableView.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FF6C2E5320797B6E0081F33F /* ModuleInput */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E5E2079854E0081F33F /* ModuleInput.swift */,
+				FF6C2E602079856D0081F33F /* ModuleInputHandler.swift */,
+			);
+			path = ModuleInput;
+			sourceTree = "<group>";
+		};
+		FF6C2E5420797B860081F33F /* EnumResult */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E5620797BB50081F33F /* Result.swift */,
+				FF6C2E5820797BBF0081F33F /* ArrayResult.swift */,
+			);
+			path = EnumResult;
+			sourceTree = "<group>";
+		};
+		FF6C2E5520797B910081F33F /* AlertsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E5A2079830A0081F33F /* CommonAlertsFactory.swift */,
+				FF6C2E5C207983EA0081F33F /* CommonAlertsFactoryImpl.swift */,
+			);
+			path = AlertsFactory;
+			sourceTree = "<group>";
+		};
+		FF6C2E622079884E0081F33F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E682079887D0081F33F /* Entity */,
+				FF6C2E672079886D0081F33F /* Configurator */,
+				FF6C2E66207988680081F33F /* Router */,
+				FF6C2E65207988620081F33F /* Interactor */,
+				FF6C2E642079885A0081F33F /* Presenter */,
+				FF6C2E63207988550081F33F /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FF6C2E63207988550081F33F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E69207988980081F33F /* SettingsView.swift */,
+				FF6C2E6B207989E10081F33F /* SettingsViewInput.swift */,
+				FF6C2E6D207989F30081F33F /* SettingsViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF6C2E642079885A0081F33F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E6F20798B0A0081F33F /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FF6C2E65207988620081F33F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E7120798B180081F33F /* SettingsInteractor.swift */,
+				FF6C2E7320798B280081F33F /* SettingsInteractorInput.swift */,
+				FF6C2E7520798B390081F33F /* SettingsInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FF6C2E66207988680081F33F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E78207995030081F33F /* SettingsRouterInput.swift */,
+				FF6C2E7A207995120081F33F /* SettingsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FF6C2E672079886D0081F33F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C2E7C207995C70081F33F /* SettingsInitializer.swift */,
+				FF6C2E7E207995E30081F33F /* SettingsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FF6C2E682079887D0081F33F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF9FE8BF207C286D007316C1 /* SearchMedia */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C10F207C2C01008AC5AC /* TableView */,
+				FF9FE8C0207C286D007316C1 /* Entity */,
+				FF9FE8C1207C286D007316C1 /* Presenter */,
+				FF9FE8C3207C286D007316C1 /* View */,
+				FF9FE8C7207C286D007316C1 /* Configurator */,
+				FF9FE8CA207C286D007316C1 /* Interactor */,
+				FF9FE8CE207C286D007316C1 /* Router */,
+			);
+			path = SearchMedia;
+			sourceTree = "<group>";
+		};
+		FF9FE8C0207C286D007316C1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF9FE8C1207C286D007316C1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8C2207C286D007316C1 /* SearchMediaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FF9FE8C3207C286D007316C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8C4207C286D007316C1 /* SearchMediaViewInput.swift */,
+				FF9FE8C5207C286D007316C1 /* SearchMediaView.swift */,
+				FF9FE8C6207C286D007316C1 /* SearchMediaViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF9FE8C7207C286D007316C1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8C8207C286D007316C1 /* SearchMediaConfigurator.swift */,
+				FF9FE8C9207C286D007316C1 /* SearchMediaInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FF9FE8CA207C286D007316C1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8CB207C286D007316C1 /* SearchMediaInteractorInput.swift */,
+				FF9FE8CC207C286D007316C1 /* SearchMediaInteractorOutput.swift */,
+				FF9FE8CD207C286D007316C1 /* SearchMediaInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FF9FE8CE207C286D007316C1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FE8CF207C286D007316C1 /* SearchMediaRouter.swift */,
+				FF9FE8D0207C286D007316C1 /* SearchMediaRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FFB7C5A7207EA2B7008B389C /* ManagerTest */ = {
+			isa = PBXGroup;
+			children = (
+				FFB7C5A8207EA2BF008B389C /* UserDefaultsManagerTest */,
+			);
+			path = ManagerTest;
+			sourceTree = "<group>";
+		};
+		FFB7C5A8207EA2BF008B389C /* UserDefaultsManagerTest */ = {
+			isa = PBXGroup;
+			children = (
+				FFB7C5A9207EA350008B389C /* UserDefaultsManagerMock.swift */,
+			);
+			path = UserDefaultsManagerTest;
+			sourceTree = "<group>";
+		};
+		FFB7C5B0207EAAA9008B389C /* ItunesSearchTestsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB7C5B1207EAAA9008B389C /* ItunesSearchTestsUITests.swift */,
+				FFB7C5B3207EAAA9008B389C /* Info.plist */,
+			);
+			path = ItunesSearchTestsUITests;
+			sourceTree = "<group>";
+		};
+		FFDCFBC7207A5DAC00F50FB7 /* EnumPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				FFDCFBC8207A5DC400F50FB7 /* EnumPickerView.swift */,
+			);
+			path = EnumPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +851,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CCD586720761C1000AD3566 /* Build configuration list for PBXNativeTarget "ItunesSearchTests" */;
 			buildPhases = (
+				E89EA507B638F8B4C074851F /* [CP] Check Pods Manifest.lock */,
 				7CCD585120761C0E00AD3566 /* Sources */,
 				7CCD585220761C0E00AD3566 /* Frameworks */,
 				7CCD585320761C0E00AD3566 /* Resources */,
+				0F8C165FC74EF3246591F84F /* [CP] Embed Pods Frameworks */,
+				F4374429DC8C8EA839C3F560 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -83,6 +866,42 @@
 			productName = ItunesSearchTests;
 			productReference = 7CCD585520761C0E00AD3566 /* ItunesSearchTests.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FF07C122207D7E53008AC5AC /* ItunesSearchTestsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF07C12A207D7E53008AC5AC /* Build configuration list for PBXNativeTarget "ItunesSearchTestsTests" */;
+			buildPhases = (
+				FF07C11F207D7E53008AC5AC /* Sources */,
+				FF07C120207D7E53008AC5AC /* Frameworks */,
+				FF07C121207D7E53008AC5AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF07C129207D7E53008AC5AC /* PBXTargetDependency */,
+			);
+			name = ItunesSearchTestsTests;
+			productName = ItunesSearchTestsTests;
+			productReference = FF07C123207D7E53008AC5AC /* ItunesSearchTestsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFB7C5AE207EAAA9008B389C /* ItunesSearchTestsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB7C5B6207EAAA9008B389C /* Build configuration list for PBXNativeTarget "ItunesSearchTestsUITests" */;
+			buildPhases = (
+				FFB7C5AB207EAAA9008B389C /* Sources */,
+				FFB7C5AC207EAAA9008B389C /* Frameworks */,
+				FFB7C5AD207EAAA9008B389C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB7C5B5207EAAA9008B389C /* PBXTargetDependency */,
+			);
+			name = ItunesSearchTestsUITests;
+			productName = ItunesSearchTestsUITests;
+			productReference = FFB7C5AF207EAAA9008B389C /* ItunesSearchTestsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +915,14 @@
 				TargetAttributes = {
 					7CCD585420761C0E00AD3566 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					FF07C122207D7E53008AC5AC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7CCD585420761C0E00AD3566;
+					};
+					FFB7C5AE207EAAA9008B389C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7CCD585420761C0E00AD3566;
 					};
 				};
 			};
@@ -113,6 +940,8 @@
 			projectRoot = "";
 			targets = (
 				7CCD585420761C0E00AD3566 /* ItunesSearchTests */,
+				FF07C122207D7E53008AC5AC /* ItunesSearchTestsTests */,
+				FFB7C5AE207EAAA9008B389C /* ItunesSearchTestsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -124,23 +953,197 @@
 			files = (
 				7CCD586320761C1000AD3566 /* LaunchScreen.storyboard in Resources */,
 				7CCD586020761C1000AD3566 /* Assets.xcassets in Resources */,
+				FF07C115207C2C52008AC5AC /* MediaTableViewCell.xib in Resources */,
 				7CCD585E20761C0E00AD3566 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF07C121207D7E53008AC5AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB7C5AD207EAAA9008B389C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F8C165FC74EF3246591F84F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89EA507B638F8B4C074851F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItunesSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4374429DC8C8EA839C3F560 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CCD585120761C0E00AD3566 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCD585B20761C0E00AD3566 /* ViewController.swift in Sources */,
+				FF9FE8D7207C286D007316C1 /* SearchMediaInteractorInput.swift in Sources */,
+				FF6C2E6E207989F30081F33F /* SettingsViewOutput.swift in Sources */,
+				FF6C2E7F207995E30081F33F /* SettingsConfigurator.swift in Sources */,
+				FF07C104207C29DA008AC5AC /* APIManager.swift in Sources */,
+				FF6C2E52207979750081F33F /* ReusableView.swift in Sources */,
+				FF9FE8D8207C286D007316C1 /* SearchMediaInteractorOutput.swift in Sources */,
+				FF9FE8D1207C286D007316C1 /* SearchMediaPresenter.swift in Sources */,
+				FF07C119207C2D72008AC5AC /* SearchMediaDataSource.swift in Sources */,
+				FFDCFBD9207A856A00F50FB7 /* MediaTypeRouter.swift in Sources */,
+				FF9FE8DA207C286D007316C1 /* SearchMediaRouter.swift in Sources */,
+				FFDCFBDF207A861E00F50FB7 /* MediaTypeInitailizer.swift in Sources */,
+				FF9FE8D4207C286D007316C1 /* SearchMediaViewOutput.swift in Sources */,
+				FF6C2E79207995030081F33F /* SettingsRouterInput.swift in Sources */,
+				FF07C10C207C29F9008AC5AC /* SearchMediaCellModelImpl.swift in Sources */,
+				FFDCFBDD207A860500F50FB7 /* MediaTypeConfigurator.swift in Sources */,
+				FF052EA1207A1F2D001C1A0F /* UserDefaultsManagerImpl.swift in Sources */,
+				FF07C11E207D7389008AC5AC /* CellPressedDelegate.swift in Sources */,
+				FF052E9D207A1D8A001C1A0F /* UserDefaultsManager.swift in Sources */,
+				FF052EA6207A28B0001C1A0F /* AmountOfObjectsViewInput.swift in Sources */,
+				FF052EB2207A2B6B001C1A0F /* AmountOfObjectsInteractorOutput.swift in Sources */,
+				FFDCFBD5207A84BC00F50FB7 /* MediaTypeInteractorInput.swift in Sources */,
+				FF07C105207C29DA008AC5AC /* ApiManagerImpl.swift in Sources */,
+				FF07C10D207C29F9008AC5AC /* SearchMediaCellModel.swift in Sources */,
+				FFDCFBCB207A7DB100F50FB7 /* MediaTypeView.swift in Sources */,
+				FF07C114207C2C52008AC5AC /* MediaTableViewCell.swift in Sources */,
+				FF07C10E207C29F9008AC5AC /* SearchMediaResult.swift in Sources */,
+				FFDCFBCD207A7DBD00F50FB7 /* MediaTypeViewInput.swift in Sources */,
+				FF6C2E7B207995120081F33F /* SettingsRouter.swift in Sources */,
+				FF6C2E5920797BBF0081F33F /* ArrayResult.swift in Sources */,
+				FF052EB4207A2C16001C1A0F /* AmountOfObjectsRouter.swift in Sources */,
+				FFDCFBD7207A84C500F50FB7 /* MediaTypeInteractorOutput.swift in Sources */,
+				FFDCFBD1207A847A00F50FB7 /* MediaTypePresenter.swift in Sources */,
+				FF9FE8D9207C286D007316C1 /* SearchMediaInteractor.swift in Sources */,
+				FF6C2E7220798B180081F33F /* SettingsInteractor.swift in Sources */,
+				FF6C2E5F2079854E0081F33F /* ModuleInput.swift in Sources */,
+				FF9FE8D2207C286D007316C1 /* SearchMediaViewInput.swift in Sources */,
+				FF9FE8D6207C286D007316C1 /* SearchMediaInitializer.swift in Sources */,
+				FF6C2E5B2079830A0081F33F /* CommonAlertsFactory.swift in Sources */,
+				FF052E9A207A1C2F001C1A0F /* MediaTypes.swift in Sources */,
+				FF6C2E7620798B390081F33F /* SettingsInteractorOutput.swift in Sources */,
+				FF6C2E5D207983EA0081F33F /* CommonAlertsFactoryImpl.swift in Sources */,
+				FF6C2E6A207988980081F33F /* SettingsView.swift in Sources */,
+				FF052EAA207A2B33001C1A0F /* AmountOfObjectsPresenter.swift in Sources */,
+				FF6C2E7020798B0A0081F33F /* SettingsPresenter.swift in Sources */,
+				FF6C2E612079856D0081F33F /* ModuleInputHandler.swift in Sources */,
+				FFDCFBC9207A5DC400F50FB7 /* EnumPickerView.swift in Sources */,
+				FF052EB8207A2CB2001C1A0F /* AmountOfObjectsConfigurator.swift in Sources */,
+				FF052EAC207A2B50001C1A0F /* AmountOfObjectsInteractor.swift in Sources */,
+				FF052EA4207A2893001C1A0F /* AmountOfObjectsView.swift in Sources */,
+				FF07C117207C2D05008AC5AC /* SearchMediaDataSourceInput.swift in Sources */,
+				FF9FE8D3207C286D007316C1 /* SearchMediaView.swift in Sources */,
+				FF052EB0207A2B62001C1A0F /* AmountOfObjectsInteractorInput.swift in Sources */,
+				FFDCFBD3207A84AC00F50FB7 /* MediaTypeInteractor.swift in Sources */,
+				FFDCFBCF207A7DC500F50FB7 /* MediaTypeVIewOutput.swift in Sources */,
+				FF052E9F207A1E99001C1A0F /* SearchByDevice.swift in Sources */,
+				FF9FE8DB207C286D007316C1 /* SearchMediaRouterInput.swift in Sources */,
+				FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */,
+				FF6C2E7D207995C70081F33F /* SettingsInitializer.swift in Sources */,
+				FF052EBA207A2D0E001C1A0F /* AmountOfObjectsInitializer.swift in Sources */,
+				FF052EB6207A2C21001C1A0F /* AmountOfObjectsRouterInput.swift in Sources */,
+				FF9FE8D5207C286D007316C1 /* SearchMediaConfigurator.swift in Sources */,
+				FF6C2E6C207989E10081F33F /* SettingsViewInput.swift in Sources */,
+				FF052EA8207A28BC001C1A0F /* AmountOfObjectsViewOutput.swift in Sources */,
+				FF6C2E5720797BB50081F33F /* Result.swift in Sources */,
+				FF6C2E7420798B280081F33F /* SettingsInteractorInput.swift in Sources */,
+				FFDCFBDB207A857900F50FB7 /* MediaTypeRouterInput.swift in Sources */,
 				7CCD585920761C0E00AD3566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF07C11F207D7E53008AC5AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF07C137207E0713008AC5AC /* SettingsPresenterMock.swift in Sources */,
+				FFB7C5A4207E96DF008B389C /* MediaTypeInteractorTest.swift in Sources */,
+				FF07C13A207E07EE008AC5AC /* SettingsRouterMock.swift in Sources */,
+				FF07C132207D8D93008AC5AC /* SettingsPresenterTest.swift in Sources */,
+				FFB7C5AA207EA350008B389C /* UserDefaultsManagerMock.swift in Sources */,
+				FF07C147207E1B90008AC5AC /* MediaTypePresenterMock.swift in Sources */,
+				FF07C143207E1AB7008AC5AC /* MediaTypeViewTest.swift in Sources */,
+				FF07C145207E1AC5008AC5AC /* MediaTypePresenterTest.swift in Sources */,
+				FFB7C5A6207EA05C008B389C /* MediaTypeViewMock.swift in Sources */,
+				FF07C12F207D8178008AC5AC /* SettingsViewTest.swift in Sources */,
+				FFB7C5A2207E96D3008B389C /* MediaTypeInteractorMock.swift in Sources */,
+				FF07C13C207E0F03008AC5AC /* SettingsRouterTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB7C5AB207EAAA9008B389C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB7C5B2207EAAA9008B389C /* ItunesSearchTestsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF07C129207D7E53008AC5AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CCD585420761C0E00AD3566 /* ItunesSearchTests */;
+			targetProxy = FF07C128207D7E53008AC5AC /* PBXContainerItemProxy */;
+		};
+		FFB7C5B5207EAAA9008B389C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CCD585420761C0E00AD3566 /* ItunesSearchTests */;
+			targetProxy = FFB7C5B4207EAAA9008B389C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7CCD585C20761C0E00AD3566 /* Main.storyboard */ = {
@@ -278,11 +1281,12 @@
 		};
 		7CCD586820761C1000AD3566 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD9751C885D68E6BB0F2761 /* Pods-ItunesSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33NC89QWWR;
-				INFOPLIST_FILE = ItunesSearchTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +1300,12 @@
 		};
 		7CCD586920761C1000AD3566 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72029CFFA1847498806AC4C7 /* Pods-ItunesSearchTests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33NC89QWWR;
-				INFOPLIST_FILE = ItunesSearchTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesSearchTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +1314,84 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF07C12B207D7E53008AC5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33NC89QWWR;
+				INFOPLIST_FILE = ItunesSearchTestsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = itis.ItunesSearchTestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesSearchTests.app/ItunesSearchTests";
+			};
+			name = Debug;
+		};
+		FF07C12C207D7E53008AC5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33NC89QWWR;
+				INFOPLIST_FILE = ItunesSearchTestsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = itis.ItunesSearchTestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesSearchTests.app/ItunesSearchTests";
+			};
+			name = Release;
+		};
+		FFB7C5B7207EAAA9008B389C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33NC89QWWR;
+				INFOPLIST_FILE = ItunesSearchTestsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = itis.ItunesSearchTestsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ItunesSearchTests;
+			};
+			name = Debug;
+		};
+		FFB7C5B8207EAAA9008B389C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33NC89QWWR;
+				INFOPLIST_FILE = ItunesSearchTestsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = itis.ItunesSearchTestsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ItunesSearchTests;
 			};
 			name = Release;
 		};
@@ -329,6 +1412,24 @@
 			buildConfigurations = (
 				7CCD586820761C1000AD3566 /* Debug */,
 				7CCD586920761C1000AD3566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF07C12A207D7E53008AC5AC /* Build configuration list for PBXNativeTarget "ItunesSearchTestsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF07C12B207D7E53008AC5AC /* Debug */,
+				FF07C12C207D7E53008AC5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB7C5B6207EAAA9008B389C /* Build configuration list for PBXNativeTarget "ItunesSearchTestsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB7C5B7207EAAA9008B389C /* Debug */,
+				FFB7C5B8207EAAA9008B389C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

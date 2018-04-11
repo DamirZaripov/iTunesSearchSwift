@@ -9,7 +9,7 @@
 import Foundation
 @testable import ItunesSearchTests
 
-class MediaTypePresenterMock: MediaTypeViewOutput {
+class MediaTypePresenterMock: MediaTypeViewOutput, MediaTypeInteractorOutput {
     
     var viewIsReadyCheck = false
     var onViewWillAppearCheck = false
@@ -17,6 +17,13 @@ class MediaTypePresenterMock: MediaTypeViewOutput {
     var getNumberOfRowsInComponentCheck = false
     var getTitleForRowCheck = false
     var didSelectMediaTypeCheck = false
+    
+    var didFinishingGetNumberOfComponentsCheck = false
+    var didFinishingGetNumberOfRowsInComponentCheck = false
+    var didFinishingGetTitleForRowCheck = false
+    var didFinishingGetMediaTypeCheck = false
+    
+    //MARK: View output
     
     func viewIsReady() {
         viewIsReadyCheck = true
@@ -41,5 +48,24 @@ class MediaTypePresenterMock: MediaTypeViewOutput {
     func didSelectMediaType(at index: Int) {
         didSelectMediaTypeCheck = true
     }
+    
+    //MARK: - Interactor output
+    
+    func didFinishingGetNumberOfComponents(with number: Int) {
+        didFinishingGetNumberOfComponentsCheck = true
+    }
+    
+    func didFinishingGetNumberOfRowsInComponent(with number: Int) {
+        didFinishingGetNumberOfRowsInComponentCheck = true
+    }
+    
+    func didFinishingGetTitleForRow(with title: String) {
+        didFinishingGetTitleForRowCheck = true
+    }
+    
+    func didFinishingGetMediaType(with index: Int) {
+        didFinishingGetMediaTypeCheck = true
+    }
+    
     
 }

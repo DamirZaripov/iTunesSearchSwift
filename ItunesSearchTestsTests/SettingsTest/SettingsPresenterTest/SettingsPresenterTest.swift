@@ -25,25 +25,31 @@ class SettingsPresenterTest: XCTestCase {
     
     func testWhenDidSelectSettingsRowThenRouterShowMediaTypeScreenCalled() {
         //given
-        let settingsRouter = RouterMock()
+        let settingsRouter = SettingsRouterMock()
+        settingsPresenter.router = settingsRouter
         
         //when
+        let indexPath = IndexPath(row: 1, section: 0)
+        settingsPresenter.didSelectSettingsRow(at: indexPath)
         
         //then
+        XCTAssertTrue(settingsRouter.check)
+        
     }
     
+    func testWhenDidSelectSettingsRowThenRouterShowAmountOfObiectsScreenCalled() {
+        //given
+        let settingsRouter = SettingsRouterMock()
+        settingsPresenter.router = settingsRouter
+        
+        //when
+        let indexPath = IndexPath(row: 0, section: 0)
+        settingsPresenter.didSelectSettingsRow(at: indexPath)
+        
+        //then
+        XCTAssertTrue(settingsRouter.check)
+    }
+
 }
 
-class RouterMock: SettingsRouterInput {
-    
-    var check = false
-    
-    func showMediaTypeScreen() {
-        check = true
-    }
-    
-    func showAmountOfObiectsScreen() {
-        check = true
-    }
-    
-}
+

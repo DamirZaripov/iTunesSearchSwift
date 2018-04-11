@@ -158,7 +158,7 @@
         <!--View-->
         <scene sceneID="hKR-o0-yA3">
             <objects>
-                <viewController title="Кол-во объектов" id="4DL-7x-qjd" customClass="AmountOfObjectsView" customModule="ItunesSearchTests" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AmountOfObjectsView" title="Кол-во объектов" id="4DL-7x-qjd" customClass="AmountOfObjectsView" customModule="ItunesSearchTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="COI-cb-ko3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

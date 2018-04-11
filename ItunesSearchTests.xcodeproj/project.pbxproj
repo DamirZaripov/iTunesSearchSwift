@@ -37,9 +37,11 @@
 		FF07C117207C2D05008AC5AC /* SearchMediaDataSourceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C116207C2D05008AC5AC /* SearchMediaDataSourceInput.swift */; };
 		FF07C119207C2D72008AC5AC /* SearchMediaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C118207C2D72008AC5AC /* SearchMediaDataSource.swift */; };
 		FF07C11E207D7389008AC5AC /* CellPressedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C11D207D7389008AC5AC /* CellPressedDelegate.swift */; };
-		FF07C126207D7E53008AC5AC /* ItunesSearchTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C125207D7E53008AC5AC /* ItunesSearchTestsTests.swift */; };
 		FF07C12F207D8178008AC5AC /* SettingsViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C12E207D8178008AC5AC /* SettingsViewTest.swift */; };
 		FF07C132207D8D93008AC5AC /* SettingsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C131207D8D93008AC5AC /* SettingsPresenterTest.swift */; };
+		FF07C137207E0713008AC5AC /* SettingsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C136207E0713008AC5AC /* SettingsPresenterMock.swift */; };
+		FF07C13A207E07EE008AC5AC /* SettingsRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C139207E07EE008AC5AC /* SettingsRouterMock.swift */; };
+		FF07C13C207E0F03008AC5AC /* SettingsRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07C13B207E0F03008AC5AC /* SettingsRouterTest.swift */; };
 		FF6C2E50207977E00081F33F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E4F207977E00081F33F /* Storyboards.swift */; };
 		FF6C2E52207979750081F33F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E51207979750081F33F /* ReusableView.swift */; };
 		FF6C2E5720797BB50081F33F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5620797BB50081F33F /* Result.swift */; };
@@ -130,10 +132,12 @@
 		FF07C118207C2D72008AC5AC /* SearchMediaDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDataSource.swift; sourceTree = "<group>"; };
 		FF07C11D207D7389008AC5AC /* CellPressedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPressedDelegate.swift; sourceTree = "<group>"; };
 		FF07C123207D7E53008AC5AC /* ItunesSearchTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesSearchTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF07C125207D7E53008AC5AC /* ItunesSearchTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchTestsTests.swift; sourceTree = "<group>"; };
 		FF07C127207D7E53008AC5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF07C12E207D8178008AC5AC /* SettingsViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTest.swift; sourceTree = "<group>"; };
 		FF07C131207D8D93008AC5AC /* SettingsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTest.swift; sourceTree = "<group>"; };
+		FF07C136207E0713008AC5AC /* SettingsPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterMock.swift; sourceTree = "<group>"; };
+		FF07C139207E07EE008AC5AC /* SettingsRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouterMock.swift; sourceTree = "<group>"; };
+		FF07C13B207E0F03008AC5AC /* SettingsRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouterTest.swift; sourceTree = "<group>"; };
 		FF6C2E4F207977E00081F33F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		FF6C2E51207979750081F33F /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		FF6C2E5620797BB50081F33F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -460,7 +464,6 @@
 			isa = PBXGroup;
 			children = (
 				FF07C12D207D8146008AC5AC /* SettingsTest */,
-				FF07C125207D7E53008AC5AC /* ItunesSearchTestsTests.swift */,
 				FF07C127207D7E53008AC5AC /* Info.plist */,
 			);
 			path = ItunesSearchTestsTests;
@@ -469,10 +472,37 @@
 		FF07C12D207D8146008AC5AC /* SettingsTest */ = {
 			isa = PBXGroup;
 			children = (
-				FF07C12E207D8178008AC5AC /* SettingsViewTest.swift */,
-				FF07C131207D8D93008AC5AC /* SettingsPresenterTest.swift */,
+				FF07C138207E07D5008AC5AC /* SettingsRouterTest */,
+				FF07C135207E0703008AC5AC /* SettingsPresenterTest */,
+				FF07C134207E0591008AC5AC /* SettingsViewTest */,
 			);
 			path = SettingsTest;
+			sourceTree = "<group>";
+		};
+		FF07C134207E0591008AC5AC /* SettingsViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C12E207D8178008AC5AC /* SettingsViewTest.swift */,
+			);
+			path = SettingsViewTest;
+			sourceTree = "<group>";
+		};
+		FF07C135207E0703008AC5AC /* SettingsPresenterTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C131207D8D93008AC5AC /* SettingsPresenterTest.swift */,
+				FF07C136207E0713008AC5AC /* SettingsPresenterMock.swift */,
+			);
+			path = SettingsPresenterTest;
+			sourceTree = "<group>";
+		};
+		FF07C138207E07D5008AC5AC /* SettingsRouterTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF07C139207E07EE008AC5AC /* SettingsRouterMock.swift */,
+				FF07C13B207E0F03008AC5AC /* SettingsRouterTest.swift */,
+			);
+			path = SettingsRouterTest;
 			sourceTree = "<group>";
 		};
 		FF6C2E48207960E10081F33F /* Resources */ = {
@@ -941,9 +971,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF07C137207E0713008AC5AC /* SettingsPresenterMock.swift in Sources */,
+				FF07C13A207E07EE008AC5AC /* SettingsRouterMock.swift in Sources */,
 				FF07C132207D8D93008AC5AC /* SettingsPresenterTest.swift in Sources */,
-				FF07C126207D7E53008AC5AC /* ItunesSearchTestsTests.swift in Sources */,
 				FF07C12F207D8178008AC5AC /* SettingsViewTest.swift in Sources */,
+				FF07C13C207E0F03008AC5AC /* SettingsRouterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

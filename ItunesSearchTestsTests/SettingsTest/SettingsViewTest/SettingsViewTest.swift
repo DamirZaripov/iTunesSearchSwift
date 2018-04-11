@@ -25,7 +25,7 @@ class SettingsViewTest: XCTestCase {
     
     func testWhenTableDidSelectRowThenPresenterDidSelectSettingsRowCalled() {
         //given
-        let settingsPresenter = PresenterMock()
+        let settingsPresenter = SettingsPresenterMock()
         settingsView.presenter = settingsPresenter
         let tableView = UITableView()
         let indexPath = IndexPath(row: 0, section: 0)
@@ -35,18 +35,8 @@ class SettingsViewTest: XCTestCase {
 
         //then
         XCTAssertTrue(settingsPresenter.check)
-
     }
-   
-    
+
 }
 
-class PresenterMock: SettingsViewOutput {
-    
-    var check = false
-    
-    func didSelectSettingsRow(at indexPath: IndexPath) {
-        check = true
-    }
-    
-}
+

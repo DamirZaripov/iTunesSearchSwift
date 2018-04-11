@@ -10,5 +10,8 @@ import Foundation
 
 protocol SettingsViewOutput: class {
     
+    /// Cell select
+    ///
+    /// - Parameter indexPath: cell index
     func didSelectSettingsRow(at indexPath: IndexPath)
 }

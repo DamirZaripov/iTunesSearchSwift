@@ -14,8 +14,6 @@ class MediaTypePresenter: MediaTypeViewOutput, MediaTypeInteractorOutput {
     var interactor: MediaTypeInteractorInput!
     var router: MediaTypeRouterInput!
     
-    let numberOfComponents = 1
-    
     //MARK: - View output
     
     func viewIsReady() {
@@ -28,7 +26,7 @@ class MediaTypePresenter: MediaTypeViewOutput, MediaTypeInteractorOutput {
     }
     
     func getNumberOfComponents() {
-        view.setNumberOfComponents(with: numberOfComponents)
+        interactor.getNumberOfComponents()
     }
     
     func getNumberOfRowsInComponent() {
@@ -44,6 +42,10 @@ class MediaTypePresenter: MediaTypeViewOutput, MediaTypeInteractorOutput {
     }
     
     //MARK: - Interactor output
+    
+    func didFinishingGetNumberOfComponents(with number: Int) {
+        view.setNumberOfComponents(with: number)
+    }
     
     func didFinishingGetNumberOfRowsInComponent(with number: Int) {
         view.setNumberOfRowsInComponent(with: number)
